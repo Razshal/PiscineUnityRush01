@@ -11,11 +11,10 @@ public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 {
 
 	
-	public bool isDragable;
-	public GameObject itemPhysic;
 	public GameObject itemToEquip;
 	public Type type = Type.eAll;
 	public string info;
+	public string name;
 
 	
 	public static ItemIcon ItemIconDrag;
@@ -62,6 +61,14 @@ public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
 	public void OnPointerEnter(PointerEventData eventData)
 	{
+		if (type == Type.eSkill)
+		{
+			ProjectileMover spell = SpellManager.Instance.getSpell(name).GetComponent<ProjectileMover>();
+			if (spell != null)
+			{
+				info = "Damage :" + spell.damages.ToString();
+			}
+		}
 		ToolTips.Instance.setToolTips(name, info, transform.position);
 	}
 

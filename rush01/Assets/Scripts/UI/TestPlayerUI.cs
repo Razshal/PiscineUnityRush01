@@ -159,6 +159,9 @@ public class TestPlayerUI : MonoBehaviour
             //}
         }
 
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+            Instantiate(SkillBar.Instance.getSpell(0), rightHand.transform.position, Quaternion.identity);
+        
     }
 
 }
