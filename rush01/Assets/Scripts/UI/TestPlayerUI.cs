@@ -128,6 +128,11 @@ public class TestPlayerUI : MonoBehaviour
     //}
 
 
+    public void TestInstanciateParticle()
+    {
+        Instantiate(SkillBar.Instance.getSpell(0), rightHand.transform.position, Quaternion.identity);
+    }
+    
 
     void Update()
     {

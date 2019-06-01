@@ -98,7 +98,7 @@ public class CharacterScript : MonoBehaviour
                 break;
         }
     }
-
+    
     public void AttackEnnemyWithAnimation()
     {
         if (state == State.ATTACKING && enemyTarget)
