@@ -17,6 +17,9 @@ public class UiSlot : MonoBehaviour, IDropHandler, IPointerClickHandler
        public delegate void ClickUnWeapon( GameObject item);
        public static event ClickUnWeapon OnWeaponUnEquip;
        
+       public delegate void ClickConsumable( Consumable item);
+       public static event ClickConsumable OnConsumableUse;
+       
        private void Start()
        {
               if (transform.childCount > 0)
@@ -47,32 +50,50 @@ public class UiSlot : MonoBehaviour, IDropHandler, IPointerClickHandler
        
        public void OnPointerClick(PointerEventData eventData)
        {
+              if (!ItemIcon)
+                     return;
               Debug.Log("Right Click");
-              if (ItemIcon && ItemIcon.GetComponent<ItemIcon>().type == Type.eWeapon)
+              if (ItemIcon.GetComponent<ItemIcon>().type == Type.eWeapon)
               {
                      Debug.Log("IsWeapon");
-                     if (transform.parent != CharacterPannel.Instance.transform &&
-                         CharacterPannel.Instance.addItem(ItemIcon))
+                     if (transform.parent.parent != CharacterPannel.Instance.transform)
                      {
-                            Debug.Log("Equiped");
-                            if (OnWeaponEquip != null)
+                            Debug.Log("CharacterPannel");
+                            if (CharacterPannel.Instance.addItem(ItemIcon))
                             {
-                                   Debug.Log("Call OnWeqponEquipEvent");
-                                   OnWeaponEquip(ItemIcon.itemToEquip);
+                                   Debug.Log("Equiped");
+                                   if (OnWeaponEquip != null)
+                                   {
+                                          Debug.Log("Call OnWeqponEquipEvent");
+                                          OnWeaponEquip(ItemIcon.itemToEquip);
+                                   }
+                                   ItemIcon = null;       
                             }
-                            ItemIcon = null;
                      }
-                     else if (transform.parent != Inventory.Instance.transform &&
-                              Inventory.Instance.addItem(ItemIcon))
+                     else if (transform.parent.parent != Inventory.Instance.transform)
                      {
-                            Debug.Log("UnEquiped");
-                            if (OnWeaponUnEquip != null)
+                            Debug.Log("Inventory");
+                            if (Inventory.Instance.addItem(ItemIcon))
                             {
-                                   Debug.Log("Call OnWeqponUnEquipEvent");
-                                   OnWeaponUnEquip(ItemIcon.itemToEquip);
+                                   Debug.Log("UnEquiped");
+                                   if (OnWeaponUnEquip != null)
+                                   {
+                                          Debug.Log("Call OnWeqponUnEquipEvent");
+                                          OnWeaponUnEquip(ItemIcon.itemToEquip);
+                                   }
+                                   ItemIcon = null;       
                             }
-                            ItemIcon = null;  
                      }
+              }
+              else if (ItemIcon.GetComponent<ItemIcon>().type == Type.eConsumable)
+              {
+                     Debug.Log("Consumable");
+                     if (OnWeaponEquip != null)
+                     {
+                            Debug.Log("Call OnWeqponEquipEvent");
+                            OnWeaponEquip(ItemIcon.itemToEquip);
+                     }
+                     ItemIcon = null;   
               }
        }
 }

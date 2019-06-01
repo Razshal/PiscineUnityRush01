@@ -8,6 +8,7 @@
       <e p="Assets/Scripts" t="Include">
         <e p="CameraScript.cs" t="Include" />
         <e p="CharacterScript.cs" t="Include" />
+        <e p="Consumable.cs" t="Include" />
         <e p="ConvertItem.cs" t="Include" />
         <e p="EnemyScript.cs" t="Include" />
         <e p="ItemPhysic.cs" t="Include" />

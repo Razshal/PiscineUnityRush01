@@ -26,7 +26,7 @@ public class CharacterPannel : MonoBehaviour {
 		{
 			if (slot.canAdd(item.GetComponent<ItemIcon>()))
 			{
-				Debug.Log("Inventory place [" + i + "]");
+				Debug.Log("CharacterPannel place [" + i + "]");
 				slot.add(item.GetComponent<ItemIcon>());
 				return true;
 			}

@@ -37,6 +37,7 @@ public class TestPlayerUI : MonoBehaviour
     {
         UiSlot.OnWeaponEquip += EquipWeapon;
         UiSlot.OnWeaponUnEquip += UnEquipWeapon;
+        UiSlot.OnConsumableUse += ConsumableUse;
         //    Inventory.ItemEquip += OnGearItem;
         //    Inventory.ItemConsumed += OnConsumeItem;
         //    Inventory.UnEquipItem += OnUnEquipItem;
@@ -49,6 +50,7 @@ public class TestPlayerUI : MonoBehaviour
     {
         UiSlot.OnWeaponEquip -= EquipWeapon;
         UiSlot.OnWeaponUnEquip -= UnEquipWeapon;
+        UiSlot.OnConsumableUse -= ConsumableUse;
      //   Inventory.ItemEquip -= OnGearItem;
      //   Inventory.ItemConsumed -= OnConsumeItem;
      //   Inventory.UnEquipItem -= OnUnEquipItem;
@@ -70,6 +72,11 @@ public class TestPlayerUI : MonoBehaviour
             Destroy(_weapon);
     }
 
+    void ConsumableUse(Consumable item)
+    {
+        //hp += item.regenHp ...
+    }
+
     void Start()
     {
         //if (GameObject.FindGameObjectWithTag("Tooltip") != null)
@@ -79,46 +86,6 @@ public class TestPlayerUI : MonoBehaviour
         //if (characterSystem != null)
         //    characterSystemInventory = characterSystem.GetComponent<Inventory>();
     }
-
-    //public void OnConsumeItem(Item item)
-    //{
-    //    for (int i = 0; i < item.itemAttributes.Count; i++)
-    //    {
-    //        if (item.itemAttributes[i].attributeName == "Health")
-    //        {
-    //            if ((currentHealth + item.itemAttributes[i].attributeValue) > maxHealth)
-    //                currentHealth = maxHealth;
-    //            else
-    //                currentHealth += item.itemAttributes[i].attributeValue;
-    //        }
-    //        if (item.itemAttributes[i].attributeName == "Mana")
-    //        {
-    //            if ((currentMana + item.itemAttributes[i].attributeValue) > maxMana)
-    //                currentMana = maxMana;
-    //            else
-    //                currentMana += item.itemAttributes[i].attributeValue;
-    //        }
-    //        if (item.itemAttributes[i].attributeName == "Armor")
-    //        {
-    //            if ((currentArmor + item.itemAttributes[i].attributeValue) > maxArmor)
-    //                currentArmor = maxArmor;
-    //            else
-    //                currentArmor += item.itemAttributes[i].attributeValue;
-    //        }
-    //        if (item.itemAttributes[i].attributeName == "Damage")
-    //        {
-    //            if ((currentDamage + item.itemAttributes[i].attributeValue) > maxDamage)
-    //                currentDamage = maxDamage;
-    //            else
-    //                currentDamage += item.itemAttributes[i].attributeValue;
-    //        }
-    //    }
-    //    //if (HPMANACanvas != null)
-    //    //{
-    //    //    UpdateManaBar();
-    //    //    UpdateHPBar();
-    //    //}
-    //}
 
     //public void OnGearItem(Item item)
     //{

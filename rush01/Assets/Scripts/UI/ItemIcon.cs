@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public enum Type
-{ eAll, eWeapon, eSkill };
+{ eAll, eWeapon, eSkill, eConsumable };
 
 public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
