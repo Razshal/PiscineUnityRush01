@@ -15,6 +15,7 @@ public class PlayerScript : CharacterScript
     public int skillPoints;
     public ParticleSystem levelup;
     public GameObject skillsAvailables;
+    public float radiusDrop = 1.0f;
 
     new void Start()
     {
@@ -38,6 +39,16 @@ public class PlayerScript : CharacterScript
         }
     }
 
+    private void Drop()
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, radiusDrop, LayerMask.GetMask("Loot"));
+        if (hitColliders.Length > 0)
+        {
+            ItemPhysic ip = hitColliders[0].GetComponent<ItemPhysic>();
+            Inventory.Instance.addItem(ConvertItem.Instance.ConvertToItemIcon(ip));
+        }
+    }
+    
     public void ReceiveExperience(int newXp)
     {
         experience += newXp;
@@ -100,5 +111,7 @@ public class PlayerScript : CharacterScript
         }
         if (Input.GetKeyDown(KeyCode.C))
             OpenStats();
+        if (Input.GetKeyDown(KeyCode.E))
+            Drop();
     }
 }

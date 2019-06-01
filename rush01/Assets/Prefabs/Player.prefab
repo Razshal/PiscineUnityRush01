@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 4790899523980534}
   - component: {fileID: 95571806279692798}
   - component: {fileID: 195170045291679790}
+  - component: {fileID: 114039327738929762}
   - component: {fileID: 114457780857207654}
   - component: {fileID: 135216996027726364}
   - component: {fileID: 143925431257133302}
@@ -2431,6 +2432,26 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114039327738929762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077493946710812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce2790a8a43a4d5b81d172150d189e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightHand: {fileID: 0}
+  inventory: {fileID: 0}
+  characterSystem: {fileID: 0}
+  HPMANACanvas: {fileID: 0}
+  maxHealth: 100
+  maxMana: 100
+  maxDamage: 0
+  maxArmor: 0
+  currentHealth: 60
 --- !u!114 &114457780857207654
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2462,6 +2483,8 @@ MonoBehaviour:
   statsUI: {fileID: 0}
   skillPoints: 0
   levelup: {fileID: 198668410259709470}
+  skillsAvailables: {fileID: 0}
+  radiusDrop: 1
 --- !u!135 &135216996027726364
 SphereCollider:
   m_ObjectHideFlags: 1

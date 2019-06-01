@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_rush01.-1291163038.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets/Scripts" t="Include">
+        <e p="CameraScript.cs" t="Include" />
+        <e p="CharacterScript.cs" t="Include" />
+        <e p="ConvertItem.cs" t="Include" />
+        <e p="EnemyScript.cs" t="Include" />
+        <e p="ItemPhysic.cs" t="Include" />
+        <e p="MainUiScript.cs" t="Include" />
+        <e p="PlayerScript.cs" t="Include" />
+        <e p="SpawnerScript.cs" t="Include" />
+        <e p="StatsMenuScript.cs" t="Include" />
+        <e p="UI" t="Include">
+          <e p="CharacterPannel.cs" t="Include" />
+          <e p="DragHandler.cs" t="Include" />
+          <e p="Inventory.cs" t="Include" />
+          <e p="ItemIcon.cs" t="Include" />
+          <e p="TestPlayerUI.cs" t="Include" />
+          <e p="UiSlot.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="rush01.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
