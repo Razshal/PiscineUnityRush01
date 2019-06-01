@@ -760,6 +760,11 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 114457780857207654, guid: 364989a9b344440e0b15145db4937c60,
+        type: 2}
+      propertyPath: deathText
+      value: 
+      objectReference: {fileID: 1481467059}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 364989a9b344440e0b15145db4937c60, type: 2}
   m_IsPrefabParent: 0
@@ -2695,6 +2700,11 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1458786098}
+--- !u!1 &1481467059 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1927368234127776, guid: c6ffb97fb1d9e459e9b85c8563381bd7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1580802483}
 --- !u!1001 &1500602098
 Prefab:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ public class PlayerScript : CharacterScript
     public int skillPoints;
     public ParticleSystem levelup;
     public GameObject skillsAvailables;
+    public GameObject deathText;
 
     new void Start()
     {
@@ -102,6 +103,7 @@ public class PlayerScript : CharacterScript
             OpenStats();
         if (Input.GetKeyDown(KeyCode.P))
             ReceiveExperience(level * 150);
-
+        if (life < 0)
+            deathText.SetActive(true);
     }
 }
