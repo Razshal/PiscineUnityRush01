@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 135216996027726364}
   - component: {fileID: 143925431257133302}
   m_Layer: 0
-  m_Name: Maya
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2443,30 +2443,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyTarget: {fileID: 0}
-  displayName: Zombie
+  displayName: Maya
   life: 0
   maxLife: 0
   strength: 20
-  agility: 20
-  constitution: 20
+  agility: 10
+  constitution: 18
   armor: 20
-  minDamage: 0
-  maxDamage: 0
+  minDamage: 13
+  maxDamage: 17
   level: 1
   requieredXp: 100
   experience: 0
   money: 0
   isInContact: 0
   state: 0
-  lifeSlider: {fileID: 0}
-  XpSlider: {fileID: 0}
-  lifeText: {fileID: 0}
-  xpText: {fileID: 0}
-  lvlText: {fileID: 0}
-  enemyInfosPanel: {fileID: 0}
-  enemyLifeSlider: {fileID: 0}
-  enemyName: {fileID: 0}
-  enemyLevel: {fileID: 0}
   enemyHover: {fileID: 0}
   statsUI: {fileID: 0}
   skillPoints: 0
