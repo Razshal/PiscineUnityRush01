@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerScript : CharacterScript
 {
     private RaycastHit clickHit;
-    new private Camera camera;
+    private Camera camera;
     private int frameCount;
 
     // Player ui references
