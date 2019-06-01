@@ -8,7 +8,7 @@ public class CharacterScript : MonoBehaviour
     protected Animator animator;
     protected NavMeshAgent navMeshAgent;
     public GameObject enemyTarget;
-    private PlayerScript playerScript;
+    protected PlayerScript playerScript;
 
     public string displayName = "Zombie";
 
@@ -57,6 +57,8 @@ public class CharacterScript : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
         isPlayer = gameObject.CompareTag("Player");
         playerScript = GameObject.FindWithTag("Player").GetComponent<PlayerScript>();
+
+
         life = maxLife = constitution * 5;
         ComputeStats();
     }

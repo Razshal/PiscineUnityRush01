@@ -100,5 +100,8 @@ public class PlayerScript : CharacterScript
         }
         if (Input.GetKeyDown(KeyCode.C))
             OpenStats();
+        if (Input.GetKeyDown(KeyCode.P))
+            ReceiveExperience(level * 150);
+
     }
 }

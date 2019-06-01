@@ -9,22 +9,26 @@ public class EnemyScript : CharacterScript
     new void Start()
     {
 		base.Start();
+        level = playerScript.level;
         player = GameObject.FindWithTag("Player");
+        agility += (int)(agility * level * 0.15);
+        strength += (int)(agility * level * 0.15);
+        constitution += (int)(agility * level * 0.15);
     }
 
 	private void OnMouseDown()
 	{
-        player.GetComponent<PlayerScript>().enemyTarget = gameObject;
+        playerScript.enemyTarget = gameObject;
 	}
 
 	private void OnMouseOver()
 	{
-        player.GetComponent<PlayerScript>().enemyHover = gameObject;
+        playerScript.enemyHover = gameObject;
 	}
 
 	private void OnMouseExit()
 	{
-        player.GetComponent<PlayerScript>().enemyHover = null;
+        playerScript.enemyHover = null;
 	}
 
 	private void OnTriggerEnter(Collider other)
