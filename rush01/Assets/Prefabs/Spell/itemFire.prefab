@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114310977876562638}
   - component: {fileID: 225012436197022656}
   m_Layer: 0
-  m_Name: Fire
+  m_Name: itemFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,11 +41,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb26e23ec5bc344fb9a93bf782bc7c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDragable: 0
-  itemPhysic: {fileID: 0}
   itemToEquip: {fileID: 0}
   type: 2
   info: 
+  name: fire
 --- !u!114 &114310977876562638
 MonoBehaviour:
   m_ObjectHideFlags: 1

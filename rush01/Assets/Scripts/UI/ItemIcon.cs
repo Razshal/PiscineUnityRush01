@@ -66,7 +66,7 @@ public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 			ProjectileMover spell = SpellManager.Instance.getSpell(name).GetComponent<ProjectileMover>();
 			if (spell != null)
 			{
-				info = "Damage :" + spell.damages.ToString();
+				info = "Level:" + spell.spellLevel.ToString() + "\nDamage:" + spell.damages.ToString() + "\n CoolDown:" + spell.SpellCoolDown.ToString();
 			}
 		}
 		ToolTips.Instance.setToolTips(name, info, transform.position);
