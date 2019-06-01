@@ -9,7 +9,6 @@ public class CharacterScript : MonoBehaviour
     protected NavMeshAgent navMeshAgent;
     public GameObject enemyTarget;
     protected PlayerScript playerScript;
-    public List<GameObject> spellList = new List<GameObject>();
 
     public string displayName = "Zombie";
 
