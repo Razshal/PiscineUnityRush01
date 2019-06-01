@@ -39,7 +39,7 @@ public class MainUiScript : MonoBehaviour {
             enemyLifeSlider.maxValue = enemyToDisplay.maxLife;
             enemyLifeSlider.value = enemyToDisplay.life;
             enemyName.text = enemyToDisplay.displayName;
-            lifeText.text = enemyToDisplay.life + "/" + enemyToDisplay.maxLife;
+            enemyLifeText.text = enemyToDisplay.life + "/" + enemyToDisplay.maxLife;
             enemyLevel.text = "LVL " + enemyToDisplay.level;
         }
         else

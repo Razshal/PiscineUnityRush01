@@ -2485,7 +2485,7 @@ MonoBehaviour:
   life: 0
   maxLife: 0
   strength: 10
-  agility: 15
+  agility: 10
   constitution: 10
   armor: 10
   minDamage: 0

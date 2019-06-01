@@ -8,7 +8,8 @@ public class CharacterScript : MonoBehaviour
     protected Animator animator;
     protected NavMeshAgent navMeshAgent;
     public GameObject enemyTarget;
-    private PlayerScript playerScript;
+    protected PlayerScript playerScript;
+    public List<GameObject> spellList = new List<GameObject>();
 
     public string displayName = "Zombie";
 
@@ -57,8 +58,8 @@ public class CharacterScript : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
         isPlayer = gameObject.CompareTag("Player");
         playerScript = GameObject.FindWithTag("Player").GetComponent<PlayerScript>();
-        life = maxLife = constitution * 5;
         ComputeStats();
+        life = maxLife;
     }
 
     public void ComputeStats()
@@ -107,6 +108,19 @@ public class CharacterScript : MonoBehaviour
         }
     }
 
+    private void CalculateEndOfDamage()
+    {
+        if (life <= 0)
+        {
+            state = State.DEAD;
+            if (!isPlayer)
+            {
+                playerScript.ReceiveExperience(experience);
+                playerScript.money += money;
+            }
+        }
+    }
+
     public void ReceiveDamages(int attackerAgility, int attackerMinDamage, int attackerMaxDamage)
     {
         float random = Random.value;
@@ -118,15 +132,13 @@ public class CharacterScript : MonoBehaviour
         if (random * 100 <= hitChance)
             life -= (baseDamage * (1 - armor / 200));
 
-        if (life <= 0)
-        {
-            state = State.DEAD;
-            if (!isPlayer)
-            {
-                playerScript.ReceiveExperience(experience);
-                playerScript.money += money;
-            }
-        }
+        CalculateEndOfDamage();
+    }
+
+    public void ReceiveDirectDamages(int damages)
+    {
+        life -= damages;
+        CalculateEndOfDamage();
     }
 
     private IEnumerator DeadDisapearing()
@@ -166,7 +178,6 @@ public class CharacterScript : MonoBehaviour
             {
                 transform.LookAt(enemyTarget.transform.position);
                 state = State.ATTACKING;
-                prioritaryWaypoint = false;
             }
             else
             {
