@@ -12,6 +12,7 @@ public class PlayerScript : CharacterScript
     // Player ui references
     public GameObject enemyHover;
     public GameObject statsUI;
+    public int statsPoints;
     public int skillPoints;
     public ParticleSystem levelup;
     public GameObject skillsAvailables;
@@ -48,7 +49,8 @@ public class PlayerScript : CharacterScript
             requieredXp += 150;
             level += 1;
             life = maxLife;
-            skillPoints += 5;
+            statsPoints += 5;
+            skillPoints += 1;
             skillsAvailables.SetActive(true);
 
             // LevelUp particle
@@ -64,7 +66,7 @@ public class PlayerScript : CharacterScript
 
     private void AddSkill()
     {
-        skillPoints--;
+        statsPoints--;
         ComputeStats();
     }
 
@@ -74,11 +76,13 @@ public class PlayerScript : CharacterScript
         agility++;
         AddSkill();
     }
+
     public void AddStrength()
     {
         strength++;
         AddSkill();
     }
+
     public void AddConst()
     {
         constitution++;
@@ -89,21 +93,24 @@ public class PlayerScript : CharacterScript
     {
         base.Update();
 
-        // Sets player click movement instructions
-        if (Input.GetMouseButtonDown(0)
-            && Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out clickHit)
-            && !clickHit.collider.gameObject.CompareTag("Enemy")
-            && !statsUI.activeSelf)
+        if (state != State.DEAD)
         {
-            navMeshAgent.SetDestination(clickHit.point);
-            prioritaryWaypoint = true;
-            enemyTarget = null;
+            // Sets player click movement instructions
+            if (Input.GetMouseButtonDown(0)
+                && Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out clickHit)
+                && !clickHit.collider.gameObject.CompareTag("Enemy")
+                && !statsUI.activeSelf)
+            {
+                navMeshAgent.SetDestination(clickHit.point);
+                prioritaryWaypoint = true;
+                enemyTarget = null;
+            }
+            if (Input.GetKeyDown(KeyCode.C))
+                OpenStats();
+            if (Input.GetKeyDown(KeyCode.P))
+                ReceiveExperience(level * 150);
         }
-        if (Input.GetKeyDown(KeyCode.C))
-            OpenStats();
-        if (Input.GetKeyDown(KeyCode.P))
-            ReceiveExperience(level * 150);
-        if (life < 0)
+        else
             deathText.SetActive(true);
     }
 }
