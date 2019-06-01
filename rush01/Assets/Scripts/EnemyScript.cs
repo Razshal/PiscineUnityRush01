@@ -14,6 +14,8 @@ public class EnemyScript : CharacterScript
         agility += (int)(agility * level * 0.15);
         strength += (int)(agility * level * 0.15);
         constitution += (int)(agility * level * 0.15);
+        ComputeStats();
+        life = maxLife;
     }
 
 	private void OnMouseDown()

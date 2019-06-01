@@ -57,10 +57,8 @@ public class CharacterScript : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
         isPlayer = gameObject.CompareTag("Player");
         playerScript = GameObject.FindWithTag("Player").GetComponent<PlayerScript>();
-
-
-        life = maxLife = constitution * 5;
         ComputeStats();
+        life = maxLife;
     }
 
     public void ComputeStats()
@@ -168,7 +166,6 @@ public class CharacterScript : MonoBehaviour
             {
                 transform.LookAt(enemyTarget.transform.position);
                 state = State.ATTACKING;
-                prioritaryWaypoint = false;
             }
             else
             {
