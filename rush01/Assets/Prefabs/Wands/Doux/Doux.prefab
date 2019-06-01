@@ -153,7 +153,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: effe59d540a96474eaab95a1d2566ac7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8caacb3b4c19645e4bb095154b1d5140, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -187,7 +187,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDragable: 0
   itemPhysic: {fileID: 0}
-  itemToEquip: {fileID: 0}
+  itemToEquip: {fileID: 1633218376152140, guid: f1205c9d477d64a35ad6c00c132789a0,
+    type: 2}
   type: 1
 --- !u!222 &222597664429495536
 CanvasRenderer:
@@ -203,7 +204,7 @@ RectTransform:
   m_GameObject: {fileID: 1909145440137256}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 15.409347}
-  m_LocalScale: {x: 0.70000416, y: 0.70000416, z: 0.70000416}
+  m_LocalScale: {x: 7, y: 7, z: 7}
   m_Children: []
   m_Father: {fileID: 4276111303797634}
   m_RootOrder: 0

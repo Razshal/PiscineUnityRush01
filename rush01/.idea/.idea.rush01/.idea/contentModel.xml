@@ -30,8 +30,12 @@
           <e p="ItemIcon.cs" t="Include" />
           <e p="ItemPhysic.cs" t="Include" />
           <e p="TestPlayerUI.cs" t="Include" />
+          <e p="ToolTips.cs" t="Include" />
           <e p="UiSlot.cs" t="Include" />
         </e>
+      </e>
+      <e p="Assets/SpellBookPreface" t="Include">
+        <e p="Readme.txt" t="Include" />
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
