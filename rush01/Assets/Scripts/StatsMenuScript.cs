@@ -22,8 +22,8 @@ public class StatsMenuScript : MonoBehaviour
     public void RefreshButtons()
     {
         foreach (GameObject button in increaseStats)
-            button.SetActive(playerScript.skillPoints > 0);
-        skillsAvailables.SetActive(playerScript.skillPoints > 0);
+            button.SetActive(playerScript.statsPoints > 0);
+        skillsAvailables.SetActive(playerScript.statsPoints > 0);
     }
 
     private void OnEnable()
@@ -45,6 +45,6 @@ public class StatsMenuScript : MonoBehaviour
         armor.text = "" + playerScript.armor;
         credits.text = "" + playerScript.money;
         remainingXP.text = "" + (playerScript.requieredXp - playerScript.experience);
-        pointsToSpend.text = playerScript.skillPoints + " Points available";
+        pointsToSpend.text = playerScript.statsPoints + " Points available";
     }
 }

@@ -57,14 +57,17 @@ public class SpellScript : MonoBehaviour
 
         if (startEntity)
             transform.position = startEntity.transform.position;
-        
+
         Destroy(gameObject, lifeTime);
     }
 
     private void FixedUpdate()
     {
         if (isDirect)
+        {
             transform.position = Vector3.MoveTowards(transform.position, target.transform.position + target.transform.up, 0.1f);
+            transform.LookAt(target.transform.position);
+        }
         if (isPersonal)
             transform.parent = startEntity.transform;
     }
