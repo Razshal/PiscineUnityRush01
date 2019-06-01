@@ -28,12 +28,17 @@ public class UiSlot : MonoBehaviour, IDropHandler, IPointerClickHandler
 
        public bool canAdd(ItemIcon newItemIcon)
        {
-              Debug.Log((newItemIcon != null ).ToString() + (transform.childCount <= 0).ToString() +
+              Debug.Log((newItemIcon != null).ToString() + (transform.childCount <= 0).ToString() +
                         (slotType == Type.eAll || newItemIcon.type == slotType).ToString());
               return newItemIcon != null && transform.childCount <= 0
                      && (slotType == Type.eAll || newItemIcon.type == slotType);
        }
 
+       public bool canAdd()
+       {
+              return transform.childCount <= 0 && (slotType == Type.eAll);
+       }
+       
        public void add(ItemIcon newItemIcon)
        {
               if (canAdd(newItemIcon))
@@ -88,12 +93,14 @@ public class UiSlot : MonoBehaviour, IDropHandler, IPointerClickHandler
               else if (ItemIcon.GetComponent<ItemIcon>().type == Type.eConsumable)
               {
                      Debug.Log("Consumable");
-                     if (OnWeaponEquip != null)
+                     if (OnConsumableUse != null)
                      {
                             Debug.Log("Call OnWeqponEquipEvent");
-                            OnWeaponEquip(ItemIcon.itemToEquip);
+                            OnConsumableUse(ItemIcon.transform.GetChild(0).GetComponent<Consumable>());
                      }
-                     ItemIcon = null;   
+
+                     Destroy(ItemIcon.gameObject);
+                     ItemIcon = null;
               }
        }
 }

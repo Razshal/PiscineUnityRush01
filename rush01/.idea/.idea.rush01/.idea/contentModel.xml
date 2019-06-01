@@ -5,22 +5,30 @@
     <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_rush01.-1291163038.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets/Low Polygon Potions Pack" t="Include">
+        <e p="Other Assets" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="CreatePrefabFromSelected.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Readme.txt" t="Include" />
+      </e>
       <e p="Assets/Scripts" t="Include">
         <e p="CameraScript.cs" t="Include" />
         <e p="CharacterScript.cs" t="Include" />
         <e p="Consumable.cs" t="Include" />
         <e p="ConvertItem.cs" t="Include" />
         <e p="EnemyScript.cs" t="Include" />
-        <e p="ItemPhysic.cs" t="Include" />
+        <e p="LootSpawner.cs" t="Include" />
         <e p="MainUiScript.cs" t="Include" />
         <e p="PlayerScript.cs" t="Include" />
         <e p="SpawnerScript.cs" t="Include" />
         <e p="StatsMenuScript.cs" t="Include" />
         <e p="UI" t="Include">
           <e p="CharacterPannel.cs" t="Include" />
-          <e p="DragHandler.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
           <e p="ItemIcon.cs" t="Include" />
+          <e p="ItemPhysic.cs" t="Include" />
           <e p="TestPlayerUI.cs" t="Include" />
           <e p="UiSlot.cs" t="Include" />
         </e>

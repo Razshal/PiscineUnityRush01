@@ -20,6 +20,8 @@ public class ConvertItem : MonoBehaviour
 		ret.transform.parent = null;
 		lItemPhysic.gameObject.SetActive(false);
 		lItemPhysic.transform.parent = ret.transform;
+		ret.transform.localRotation = Quaternion.identity;
+		ret.transform.localPosition = Vector3.zero;
 		return ret.GetComponent<ItemIcon>();
 	}
 	
@@ -30,7 +32,6 @@ public class ConvertItem : MonoBehaviour
 		ret.transform.parent = null;
 		lItemIcon.gameObject.SetActive(false);
 		lItemIcon.transform.parent = ret.transform;
-		//re Rotate
 		return ret.GetComponent<ItemPhysic>();
 	}
 }

@@ -36,4 +36,15 @@ public class Inventory : MonoBehaviour
         return false;
     }
 
+    public bool leftPlace()
+    {
+        foreach (var slot in _slots)
+        {
+            if (slot.canAdd())
+                return true;
+
+        }
+        return false;
+    }
+    
 }

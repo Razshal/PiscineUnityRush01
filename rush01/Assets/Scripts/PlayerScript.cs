@@ -45,7 +45,8 @@ public class PlayerScript : CharacterScript
         if (hitColliders.Length > 0)
         {
             ItemPhysic ip = hitColliders[0].GetComponent<ItemPhysic>();
-            Inventory.Instance.addItem(ConvertItem.Instance.ConvertToItemIcon(ip));
+            if (Inventory.Instance.leftPlace())
+                Inventory.Instance.addItem(ConvertItem.Instance.ConvertToItemIcon(ip));
         }
     }
     

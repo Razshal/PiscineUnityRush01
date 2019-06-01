@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54624988371360998}
   - component: {fileID: 64134237677860328}
   - component: {fileID: 114847205456465494}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Doux
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fcb3e3f8ca2349dcb2c9f52cb807bcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   objectPhysic: {fileID: 1615546242170994}
 --- !u!114 &114981464630476360
 MonoBehaviour:

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23444584883843236}
   - component: {fileID: 114679086251551388}
   m_Layer: 8
-  m_Name: WandWeapon
+  m_Name: Wand 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
