@@ -78,8 +78,7 @@ public class ItemIcon : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
     {
         if (Input.GetKey(KeyCode.LeftShift) && player.skillPoints > 0 && spellManager.GetSpellLevel(title) < 5)
         {
-            spellManager.IncreaseSpellLevel(title);
-            player.skillPoints--;
+            spellManager.IncreaseSpellLevel(title, player);
         }
     }
 

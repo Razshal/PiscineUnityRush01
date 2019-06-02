@@ -21,7 +21,7 @@ public class SpellManager : MonoBehaviour
         Debug.Log("PLSLSS");
         foreach (GameObject spell in spellValues)
         {
-            
+
             Debug.Log(spell.GetComponent<SpellScript>().displayName);
             _spellDictionary.Add(spell.GetComponent<SpellScript>().displayName, spell);
         }
@@ -46,10 +46,14 @@ public class SpellManager : MonoBehaviour
         return 1;
     }
 
-    public void IncreaseSpellLevel(string name)
+    public void IncreaseSpellLevel(string name, PlayerScript player)
     {
-        if (_spellLevelDictionary.ContainsKey(name))
+        if (player.level >= _spellDictionary[name].GetComponent<SpellScript>().minLevel
+            && _spellLevelDictionary.ContainsKey(name))
+        {
             _spellLevelDictionary[name]++;
+            player.skillPoints--;
+        }
     }
 
     public bool CanLaunchSpell(string name)
@@ -62,12 +66,12 @@ public class SpellManager : MonoBehaviour
         return false;
     }
 
-	public void Update()
-	{
+    public void Update()
+    {
         foreach (GameObject spell in spellValues)
         {
             if (_spellCoolDownDictionary[spell.GetComponent<SpellScript>().displayName] > 0)
                 _spellCoolDownDictionary[spell.GetComponent<SpellScript>().displayName] -= Time.deltaTime;
         }
-	}
+    }
 }

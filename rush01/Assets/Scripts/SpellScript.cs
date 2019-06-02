@@ -14,6 +14,7 @@ public class SpellScript : MonoBehaviour
     public bool isDirect = false;
     public bool isHeal = false;
 
+    public int minLevel = 1;
     public int damages = 10;
     public float spellCoolDown = 10f;
     public float lifeTime = 10f;
