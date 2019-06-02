@@ -11,6 +11,8 @@ public class ItemPhysic : MonoBehaviour
 	private void Start()
 	{
 		rarity = RarityManager.Instance.getRandomRarity();
-		GetComponent<Outline>().OutlineColor = rarity.color;
+		Outline outline = GetComponent<Outline>();
+		if (outline != null)
+			outline.OutlineColor = rarity.color;
 	}
 }

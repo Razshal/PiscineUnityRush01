@@ -9,6 +9,7 @@ public class CharacterScript : MonoBehaviour
     protected NavMeshAgent navMeshAgent;
     public GameObject enemyTarget;
     protected PlayerScript playerScript;
+    public GameObject autoPotion;
 
     public string displayName = "Zombie";
 
@@ -107,7 +108,7 @@ public class CharacterScript : MonoBehaviour
         }
     }
 
-    private void CalculateEndOfDamage()
+    private void CalculateIfDead()
     {
         if (life <= 0)
         {
@@ -116,6 +117,8 @@ public class CharacterScript : MonoBehaviour
             {
                 playerScript.ReceiveExperience(experience);
                 playerScript.money += money;
+                if (Random.value < 0.1)
+                    Instantiate(autoPotion, transform.position, transform.rotation);
             }
         }
     }
@@ -131,13 +134,13 @@ public class CharacterScript : MonoBehaviour
         if (random * 100 <= hitChance)
             life -= (baseDamage * (1 - armor / 200));
 
-        CalculateEndOfDamage();
+        CalculateIfDead();
     }
 
     public void ReceiveDirectDamages(int damages)
     {
         life -= damages;
-        CalculateEndOfDamage();
+        CalculateIfDead();
     }
 
     private IEnumerator DeadDisapearing()
@@ -171,7 +174,7 @@ public class CharacterScript : MonoBehaviour
         if (state != State.DEAD)
         {
             // Sets states for animations and attack
-            if (navMeshAgent.hasPath && !isInContact)
+            if (!isInContact)
                 state = State.RUN;
             else if (enemyTarget && isInContact && enemyTarget.GetComponent<CharacterScript>().state != State.DEAD)
             {

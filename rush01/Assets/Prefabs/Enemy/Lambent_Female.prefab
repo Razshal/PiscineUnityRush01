@@ -1427,7 +1427,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1619243067009414}
-  m_LocalRotation: {x: -0.0000007283841, y: -0.68016547, z: 0.1669352, w: 0.713798}
+  m_LocalRotation: {x: -0.0000007283842, y: -0.6801655, z: 0.16693522, w: 0.71379805}
   m_LocalPosition: {x: 0.013591, y: -0.03034, z: -0.1548845}
   m_LocalScale: {x: 0.99999154, y: 0.9999992, z: 0.9999923}
   m_Children:
@@ -2481,6 +2481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyTarget: {fileID: 0}
+  autoPotion: {fileID: 1707932182818942, guid: 8ea28397b82144a57afc8dd90b356bc3, type: 2}
   displayName: Female Zombie
   life: 0
   maxLife: 0

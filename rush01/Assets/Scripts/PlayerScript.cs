@@ -112,6 +112,14 @@ public class PlayerScript : CharacterScript
         }
     }
 
+    public void ReceiveLife(int healAmmount)
+    {
+        if (life + healAmmount > maxLife)
+            life = maxLife;
+        else
+            life += healAmmount;
+    }
+
     public void OpenStats()
     {
         statsUI.SetActive(!statsUI.activeSelf);
@@ -146,6 +154,7 @@ public class PlayerScript : CharacterScript
     {
         base.Update();
 
+
         if (state != State.DEAD)
         {
             // Sets player click movement instructions
@@ -162,29 +171,26 @@ public class PlayerScript : CharacterScript
                 OpenStats();
             if (Input.GetKeyDown(KeyCode.P))
                 ReceiveExperience(level * 150);
+            if (Input.GetKeyDown(KeyCode.E))
+                Drop();
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                if (inventory.isHided())
+                    inventory.Show();
+                else
+                    inventory.Hide();
+            }
+
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                if (characterSystem.isHided())
+                    characterSystem.Show();
+                else
+                    characterSystem.Hide();
+            }
         }
         else
             deathText.SetActive(true);
-        if (Input.GetKeyDown(KeyCode.C))
-            OpenStats();
-        if (Input.GetKeyDown(KeyCode.E))
-            Drop();
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            if (inventory.isHided())
-                inventory.Show();
-            else
-                inventory.Hide();
-        }
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            if (characterSystem.isHided())
-                characterSystem.Show();
-            else
-                characterSystem.Hide();
-        }
-        
         if (Input.GetKeyDown(KeyCode.Alpha1))
             Instantiate(SkillBar.Instance.getSpell(0), rightHand.transform.position, Quaternion.identity);
     }
