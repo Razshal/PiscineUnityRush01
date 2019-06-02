@@ -71,6 +71,14 @@ public class PlayerScript : CharacterScript
         }
     }
 
+    public void ReceiveLife(int healAmmount)
+    {
+        if (life + healAmmount > maxLife)
+            life = maxLife;
+        else
+            life += healAmmount;
+    }
+
     public void OpenStats()
     {
         statsUI.SetActive(!statsUI.activeSelf);
@@ -105,6 +113,7 @@ public class PlayerScript : CharacterScript
     {
         base.Update();
 
+
         if (state != State.DEAD)
         {
             // Sets player click movement instructions
@@ -121,12 +130,11 @@ public class PlayerScript : CharacterScript
                 OpenStats();
             if (Input.GetKeyDown(KeyCode.P))
                 ReceiveExperience(level * 150);
+            if (Input.GetKeyDown(KeyCode.E))
+                Drop();
         }
         else
             deathText.SetActive(true);
-        if (Input.GetKeyDown(KeyCode.C))
-            OpenStats();
-        if (Input.GetKeyDown(KeyCode.E))
-            Drop();
+
     }
 }

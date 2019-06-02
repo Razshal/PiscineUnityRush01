@@ -54,4 +54,4 @@ MonoBehaviour:
   prefabToSpawn:
   - {fileID: 1187181515561282, guid: 824b3979fe1214bd4927cbad592bed98, type: 2}
   - {fileID: 1746475319031524, guid: 9c0d35ab4135c4aa4965980238864ca5, type: 2}
-  respawnTime: 3
+  respawnTime: 10

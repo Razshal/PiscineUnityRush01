@@ -921,15 +921,15 @@ Prefab:
       objectReference: {fileID: 1481467059}
     - target: {fileID: 4748575575624628, guid: 364989a9b344440e0b15145db4937c60, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.029457267
+      value: 0.02945727
       objectReference: {fileID: 0}
     - target: {fileID: 4748575575624628, guid: 364989a9b344440e0b15145db4937c60, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -4.4408916e-16
+      value: -4.4408918e-16
       objectReference: {fileID: 0}
     - target: {fileID: 4748575575624628, guid: 364989a9b344440e0b15145db4937c60, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.999566
+      value: 0.9995661
       objectReference: {fileID: 0}
     - target: {fileID: 114457780857207654, guid: 364989a9b344440e0b15145db4937c60,
         type: 2}
@@ -937,6 +937,16 @@ Prefab:
       value: 
       objectReference: {fileID: 1124310126471994, guid: 7dbae8c8060694410b798e76aca7382e,
         type: 2}
+    - target: {fileID: 114457780857207654, guid: 364989a9b344440e0b15145db4937c60,
+        type: 2}
+      propertyPath: agility
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114457780857207654, guid: 364989a9b344440e0b15145db4937c60,
+        type: 2}
+      propertyPath: armor
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 364989a9b344440e0b15145db4937c60, type: 2}
   m_IsPrefabParent: 0

@@ -21,17 +21,20 @@ public class SpellScript : MonoBehaviour
     public string displayName;
     public string description = "A spell";
 
+    private bool canDealDamages = true;
+
     protected List<GameObject> enemies = new List<GameObject>();
 
     protected void OnTriggerEnter(Collider other)
     {
         enemies.Add(other.gameObject);
-        if (isDirect && target && other.gameObject == target)
+        if (canDealDamages && isDirect && target && other.gameObject == target)
         {
             target.GetComponent<CharacterScript>().ReceiveDirectDamages(damages);
+            canDealDamages = false;
             Destroy(gameObject);
         }
-        else if (isZone)
+        else if (isZone && canDealDamages)
             StartCoroutine(ZoneCoroutine());
     }
 
