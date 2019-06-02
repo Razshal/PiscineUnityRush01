@@ -43,20 +43,10 @@
             <e p="Electricity.shader" t="Include" />
           </e>
         </e>
-        <e p="Fantasy nature" t="Include">
-          <e p="Double Sided Shaders" t="Include">
-            <e p="Double Sided Transparent Diffuse Bump Cutout.shader" t="Include" />
-          </e>
-        </e>
         <e p="low poly medieval buildings" t="Include">
           <e p="Readme.txt" t="Include" />
         </e>
         <e p="Low Polygon Potions Pack" t="Include">
-          <e p="Other Assets" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="CreatePrefabFromSelected.cs" t="Include" />
-            </e>
-          </e>
           <e p="Readme.txt" t="Include" />
         </e>
         <e p="NatureStarterKit2" t="Include">
@@ -232,6 +222,126 @@
       <e p="Assets/Editor" t="Include">
         <e p="ShaderChanger.cs" t="Include" />
       </e>
+      <e p="Assets/KriptoFX" t="Include">
+        <e p="Realistic Effects Pack v1" t="Include">
+          <e p="DemoResources" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="RFX1_DemoGUI.cs" t="Include" />
+              <e p="RFX1_FPS.cs" t="Include" />
+              <e p="RFX1_RealtimeReflection.cs" t="Include" />
+            </e>
+          </e>
+          <e p="PostEffects" t="Include">
+            <e p="Mobile" t="Include">
+              <e p="Editor" t="Include">
+                <e p="RFX1LayerUtilsDistortion.cs" t="Include" />
+              </e>
+              <e p="NewUnlitShader.shader" t="Include" />
+              <e p="Resources" t="Include">
+                <e p="RFX1_Bloom.shader" t="Include" />
+                <e p="RFX1_Bloom_Inc.cginc" t="Include" />
+                <e p="RFX1_BloomAdditive.shader" t="Include" />
+                <e p="RFX1_ReplacementPostEffect.shader" t="Include" />
+              </e>
+              <e p="RFX1_BloomMobile.cs" t="Include" />
+              <e p="RFX1_Depth.shader" t="Include" />
+              <e p="RFX1_DistortionAndBloom.cs" t="Include" />
+              <e p="RFX1_MobileBloomLayer.cs" t="Include" />
+            </e>
+            <e p="PC" t="Include">
+              <e p="Bloom" t="Include">
+                <e p="Bloom.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="BloomEditor.cs" t="Include" />
+                  <e p="BloomGraphDrawer.cs" t="Include" />
+                </e>
+                <e p="Resources" t="Include">
+                  <e p="Bloom.cginc" t="Include" />
+                  <e p="Bloom.shader" t="Include" />
+                </e>
+              </e>
+              <e p="Common" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="EditorGUIHelper.cs" t="Include" />
+                  <e p="FieldFinder.cs" t="Include" />
+                  <e p="MinDrawer.cs" t="Include" />
+                </e>
+                <e p="ImageEffectHelper.cs" t="Include" />
+                <e p="MinAttribute.cs" t="Include" />
+                <e p="RenderTextureUtility.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Readme.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="Curves" t="Include">
+              <e p="RFX1_AudioPitchCurves.cs" t="Include" />
+              <e p="RFX1_AudioVolumeCurves.cs" t="Include" />
+              <e p="RFX1_LightCurves.cs" t="Include" />
+              <e p="RFX1_ProjectorSizeCurves.cs" t="Include" />
+              <e p="RFX1_ScaleCurves.cs" t="Include" />
+              <e p="RFX1_ShaderColorGradient.cs" t="Include" />
+              <e p="RFX1_ShaderFloatCurve.cs" t="Include" />
+              <e p="RFX1_ShaderProperties.cs" t="Include" />
+              <e p="RFX1_WindCurves.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="CustomShaderGUI.cs" t="Include" />
+              <e p="RFX1_CustomMaterialInspectorParticle.cs" t="Include" />
+            </e>
+            <e p="EffectSettings" t="Include">
+              <e p="RFX1_EffectSettingColor.cs" t="Include" />
+              <e p="RFX1_EffectSettingProjectile.cs" t="Include" />
+              <e p="RFX1_ShieldInteraction.cs" t="Include" />
+              <e p="RFX1_Target.cs" t="Include" />
+            </e>
+            <e p="RFX1_ActivateGravityAfterCollision.cs" t="Include" />
+            <e p="RFX1_AnimatorEvents.cs" t="Include" />
+            <e p="RFX1_ColorHelper.cs" t="Include" />
+            <e p="RFX1_DeactivateByTime.cs" t="Include" />
+            <e p="RFX1_ParticleCollisionDecal.cs" t="Include" />
+            <e p="RFX1_ParticleCollisionGameObject.cs" t="Include" />
+            <e p="RFX1_ParticleGravityPoint.cs" t="Include" />
+            <e p="RFX1_ParticleInfinite.cs" t="Include" />
+            <e p="RFX1_ParticlePositionPoint.cs" t="Include" />
+            <e p="RFX1_RandomRotate.cs" t="Include" />
+            <e p="RFX1_RotationFreeze.cs" t="Include" />
+            <e p="RFX1_ShieldCollisionTrigger.cs" t="Include" />
+            <e p="RFX1_SimpleDecal.cs" t="Include" />
+            <e p="RFX1_StartDelay.cs" t="Include" />
+            <e p="RFX1_TextureShaderProperties.cs" t="Include" />
+            <e p="RFX1_TransformMotion.cs" t="Include" />
+            <e p="RFX1_UVAnimation.cs" t="Include" />
+            <e p="RFX4_LocalSpaceFix.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="Decal" t="Include">
+              <e p="RFX1_DecalDistortMask.shader" t="Include" />
+              <e p="RFX1_DecalDistortMaskMobile.shader" t="Include" />
+              <e p="RFX1_DecalDistortMaskMul.shader" t="Include" />
+              <e p="RFX1_DecalMask.shader" t="Include" />
+              <e p="RFX1_DecalMaskCutOut.shader" t="Include" />
+              <e p="RFX1_DecalMaskCutOutMobile.shader" t="Include" />
+              <e p="RFX1_DecalWorldIce.shader" t="Include" />
+              <e p="RFX1_DecalWorldIceMobile.shader" t="Include" />
+              <e p="RFX1_DecalWorldMask.shader" t="Include" />
+              <e p="RFX1_DecalWorldMaskMobile.shader" t="Include" />
+            </e>
+            <e p="DistortPasses.cginc" t="Include" />
+            <e p="RFX1_BlendCutout.shader" t="Include" />
+            <e p="RFX1_CutoutBorder.shader" t="Include" />
+            <e p="RFX1_CutoutBorderMobile.shader" t="Include" />
+            <e p="RFX1_Fringe.shader" t="Include" />
+            <e p="RFX1_FringeMobile.shader" t="Include" />
+            <e p="RFX1_Lightning.shader" t="Include" />
+            <e p="RFX1_LightningParticles.shader" t="Include" />
+            <e p="RFX1_Metall.shader" t="Include" />
+            <e p="RFX1_Particle.shader" t="Include" />
+            <e p="UberDistortStandard.shader" t="Include" />
+            <e p="UberDistortStandardMobile.shader" t="Include" />
+          </e>
+        </e>
+      </e>
       <e p="Assets/QuickOutline" t="Include">
         <e p="Readme.txt" t="Include" />
         <e p="Resources" t="Include">
@@ -256,7 +366,6 @@
         <e p="OutlineGrowEffect.cs" t="Include" />
         <e p="PlayerScript.cs" t="Include" />
         <e p="RarityManager.cs" t="Include" />
-        <e p="SkillButtonScript.cs" t="Include" />
         <e p="SpawnerScript.cs" t="Include" />
         <e p="SpellManager.cs" t="Include" />
         <e p="SpellScript.cs" t="Include" />

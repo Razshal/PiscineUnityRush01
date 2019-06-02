@@ -13,7 +13,7 @@ public class ItemIcon : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
 	public GameObject itemToEquip;
 	public Type type = Type.eAll;
 	public string info;
-	public string name;
+	public string title;
     private SpellManager spellManager;
 	
 	public static ItemIcon ItemIconDrag;
@@ -76,24 +76,53 @@ public class ItemIcon : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (Input.GetKey(KeyCode.LeftShift) && player.skillPoints > 0 && spellManager.GetSpellLevel(name) < 5)
+        if (Input.GetKey(KeyCode.LeftShift) && player.skillPoints > 0 && spellManager.GetSpellLevel(title) < 5)
         {
-            spellManager.IncreaseSpellLevel(name);
+            spellManager.IncreaseSpellLevel(title);
             player.skillPoints--;
         }
     }
 
 	public void OnPointerEnter(PointerEventData eventData)
 	{
+		ItemPhysic itemPhysic = null;
+		if (transform.childCount > 0)
+			itemPhysic = transform.GetChild(0).GetComponent<ItemPhysic>();
 		if (type == Type.eSkill)
 		{
-			ProjectileMover spell = SpellManager.Instance.getSpell(name).GetComponent<ProjectileMover>();
+			ProjectileMover spell = SpellManager.Instance.getSpell(title).GetComponent<ProjectileMover>();
 			if (spell != null)
 			{
+				title = spell.displayName;
+				ToolTips.Instance.setTitleColor();
 				info = "Level:" + spell.spellLevel.ToString() + "\nDamage:" + spell.damages.ToString() + "\n CoolDown:" + spell.spellCoolDown.ToString();
 			}
 		}
-		ToolTips.Instance.setToolTips(name, info, transform.position);
+
+		if (type == Type.eWeapon)
+		{
+			Rarity rarity = itemPhysic.rarity;
+			Weapon weapon = itemToEquip.GetComponent<Weapon>();
+			 
+			if (itemPhysic != null && rarity != null)
+			{
+				title = itemPhysic.displayName;
+				ToolTips.Instance.setTitleColor(rarity.color);
+				info = rarity.displayName + "\nDamage: " + weapon.getMinDamage() + "-" + weapon.getMaxDamage(rarity.factorPower);
+				info += "\nAttackSpeed :";
+			}
+		}
+
+		if (type == Type.eConsumable)
+		{
+			Consumable consumable = itemPhysic.GetComponent<Consumable>();
+			title = itemPhysic.displayName;
+			info = "";
+			if (consumable.regenHp >= 0)
+				info += "Regeneration HP: " + consumable.regenHp.ToString();
+		}
+
+		ToolTips.Instance.setToolTips(title, info, transform.position);
 	}
 
 	public void OnPointerExit(PointerEventData eventData)

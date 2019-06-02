@@ -110,7 +110,7 @@ public class CharacterScript : MonoBehaviour
 
     private void CalculateIfDead()
     {
-        if (life <= 0)
+        if (life <= 0 && state != State.DEAD)
         {
             state = State.DEAD;
             if (!isPlayer)

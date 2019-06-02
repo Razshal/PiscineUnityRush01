@@ -159,7 +159,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -233,6 +233,7 @@ MonoBehaviour:
   speed: 0.2
   displayName: IceRay
   description: An ice ray that goes straight to the enemy
+  enemies: []
   hitOffset: 0.1
   UseFirePointRotation: 0
   hit: {fileID: 1231636063597364, guid: 3aa0fab185f378240b831342bde74b26, type: 2}

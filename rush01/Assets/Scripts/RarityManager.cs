@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 [Serializable]
 public class Rarity
 {
-    public string name;
+    public string displayName;
     public Color color;
     public float factorPower;
     public float factorRarity;
