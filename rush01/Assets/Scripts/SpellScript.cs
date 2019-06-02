@@ -48,7 +48,11 @@ public class SpellScript : MonoBehaviour
             {
                 Debug.Log("DoDamageZone");
                 foreach (var enemy in enemies)
-                    enemy.GetComponent<CharacterScript>().ReceiveDirectDamages(damages);
+                {
+                    if (enemy)
+                        enemy.GetComponent<CharacterScript>().ReceiveDirectDamages(damages);
+                }
+                    
                 StartCoroutine(ZoneCoroutine());    
             }
         }

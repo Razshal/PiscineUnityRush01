@@ -2,101 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c12a5c1-fcca-4fd0-9b4f-a33e603a9aaf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Spell/Heal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.rush01/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.rush01/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.rush01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.rush01/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/AAA Projectiles/Scripts/ProjectileMover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/AAA Projectiles/Scripts/ProjectileMover.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Double Sided Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Double Sided Shaders/Double Sided Transparent Diffuse Bump Cutout.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Double Sided Shaders/Double Sided Transparent Diffuse Bump Cutout.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Fallen_tree.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Fallen_tree/Fallen_tree.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Fallen_tree/Fallen_tree.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Fallen_tree/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Fallen_tree/Materials/No Name.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Fallen_tree/Materials/No Name.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Fallen_tree/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Fallen_tree/Textures/fallen_tree_normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Fallen_tree/Textures/fallen_tree_normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Fallen_tree/Textures/fallentree_Diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Fallen_tree/Textures/fallentree_Diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass/Grass_1.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass/Grass_1.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass/Materials/Grass_material.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass/Materials/Grass_material.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass/Materials/LowPolyDiffuseMap.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass/Materials/LowPolyDiffuseMap.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass/Textures/Grass_diffusmap.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass/Textures/Grass_diffusmap.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass/Textures/grass_normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass/Textures/grass_normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass/grass_2_yellowflowers.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass/grass_2_yellowflowers.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass/grass_3_blossom.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Grass/grass_3_blossom.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Old_tree.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Old_tree/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Old_tree/Materials/Old_tree.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Old_tree/Materials/Old_tree.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Old_tree/Materials/default.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Old_tree/Materials/default.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spell/Heal.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Old_tree/Old_tree.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Old_tree/Old_tree.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Old_tree/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Old_tree/Textures/Old_Tree__normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Old_tree/Textures/Old_Tree__normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Old_tree/Textures/Oldtree_Diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Old_tree/Textures/Oldtree_Diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/Materials/Rock_1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/Materials/Rock_1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/Materials/Rock_2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/Materials/Rock_2.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/Materials/default.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/Materials/default.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/Textures/Rock_1_diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/Textures/Rock_1_diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/Textures/Rock_1_normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/Textures/Rock_1_normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/Textures/Rock_2_normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/Textures/Rock_2_normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/Textures/rock_2_diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/Textures/rock_2_diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/rock_1.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/rock_1.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/rock_2.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/Models/Rocks/rock_2.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/fantasy_nature.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/fantasy_nature.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/prefabs/Fallen_tree.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/prefabs/Fallen_tree.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/prefabs/Grass_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/prefabs/Grass_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/prefabs/Old_tree.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/prefabs/Old_tree.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/prefabs/Rock_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/prefabs/Rock_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/prefabs/Rock_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/prefabs/Rock_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/prefabs/grass_2_yellowflower.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/prefabs/grass_2_yellowflower.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/prefabs/grass_3_blossom.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Fantasy nature/prefabs/grass_3_blossom.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpellManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpellManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpellScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpellScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ItemIcon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ItemIcon.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,12 +38,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="9478" />
+          <entry key="cs" value="9529" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="9478" />
+          <entry key="C#" value="9529" />
         </counts>
       </usages-collector>
     </session>
@@ -148,8 +55,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="210" column="25" selection-start-line="210" selection-start-column="25" selection-end-line="210" selection-end-column="25" />
+                <state relative-caret-position="295">
+                  <caret line="201" column="47" selection-start-line="201" selection-start-column="47" selection-end-line="201" selection-end-column="47" />
                   <folding>
                     <marker date="1559497074000" expanded="false" signature="6:100" ph="..." />
                     <marker date="1559497074000" expanded="true" signature="145:6364" ph="{...}" />
@@ -276,20 +183,21 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpellScript.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="445">
-                  <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+                <state relative-caret-position="651">
+                  <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
                   <folding>
-                    <marker date="1559497074000" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1559497074000" expanded="true" signature="120:2748" ph="{...}" />
-                    <marker date="1559497074000" expanded="true" signature="848:1723" ph="{...}" />
-                    <marker date="1559497074000" expanded="true" signature="1100:1365" ph="{...}" />
-                    <marker date="1559497074000" expanded="true" signature="1390:1704" ph="{...}" />
-                    <marker date="1559497074000" expanded="true" signature="1434:1694" ph="{...}" />
-                    <marker date="1559497074000" expanded="true" signature="1773:1884" ph="{...}" />
-                    <marker date="1559497074000" expanded="true" signature="1927:2068" ph="{...}" />
-                    <marker date="1559497074000" expanded="true" signature="2093:2383" ph="{...}" />
-                    <marker date="1559497074000" expanded="true" signature="2417:2746" ph="{...}" />
-                    <marker date="1559497074000" expanded="true" signature="2455:2662" ph="{...}" />
+                    <marker date="1559497771000" expanded="false" signature="6:78" ph="..." />
+                    <marker date="1559497771000" expanded="true" signature="120:2840" ph="{...}" />
+                    <marker date="1559497771000" expanded="true" signature="848:1815" ph="{...}" />
+                    <marker date="1559497771000" expanded="true" signature="1100:1365" ph="{...}" />
+                    <marker date="1559497771000" expanded="true" signature="1390:1796" ph="{...}" />
+                    <marker date="1559497771000" expanded="true" signature="1434:1786" ph="{...}" />
+                    <marker date="1559497771000" expanded="true" signature="1538:1698" ph="{...}" />
+                    <marker date="1559497771000" expanded="true" signature="1865:1976" ph="{...}" />
+                    <marker date="1559497771000" expanded="true" signature="2019:2160" ph="{...}" />
+                    <marker date="1559497771000" expanded="true" signature="2185:2475" ph="{...}" />
+                    <marker date="1559497771000" expanded="true" signature="2509:2838" ph="{...}" />
+                    <marker date="1559497771000" expanded="true" signature="2547:2754" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -410,8 +318,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/ItemIcon.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="443">
-                  <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+                <state relative-caret-position="509">
+                  <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
                   <folding>
                     <marker date="1559496264000" expanded="false" signature="6:110" ph="..." />
                     <marker date="1559496264000" expanded="true" signature="128:167" ph="{...}" />
@@ -514,8 +422,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/SkillBar.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+                <state relative-caret-position="360">
+                  <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
                   <folding>
                     <marker date="1559492992000" expanded="false" signature="6:78" ph="..." />
                     <marker date="1559492992000" expanded="true" signature="114:729" ph="{...}" />
@@ -531,16 +439,17 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpellManager.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="32" selection-start-line="32" selection-end-line="32" />
+                <state relative-caret-position="255">
+                  <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
                   <folding>
-                    <marker date="1559497005000" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1559497005000" expanded="true" signature="121:1475" ph="{...}" />
-                    <marker date="1559497005000" expanded="true" signature="493:581" ph="{...}" />
-                    <marker date="1559497005000" expanded="true" signature="607:921" ph="{...}" />
-                    <marker date="1559497005000" expanded="true" signature="966:1142" ph="{...}" />
-                    <marker date="1559497005000" expanded="true" signature="1185:1316" ph="{...}" />
-                    <marker date="1559497005000" expanded="true" signature="1365:1473" ph="{...}" />
+                    <marker date="1559497669000" expanded="false" signature="6:78" ph="..." />
+                    <marker date="1559497669000" expanded="true" signature="121:1607" ph="{...}" />
+                    <marker date="1559497669000" expanded="true" signature="493:581" ph="{...}" />
+                    <marker date="1559497669000" expanded="true" signature="607:1053" ph="{...}" />
+                    <marker date="1559497669000" expanded="true" signature="717:908" ph="{...}" />
+                    <marker date="1559497669000" expanded="true" signature="1098:1274" ph="{...}" />
+                    <marker date="1559497669000" expanded="true" signature="1317:1448" ph="{...}" />
+                    <marker date="1559497669000" expanded="true" signature="1497:1605" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -552,7 +461,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>L</find>
       <find>lol</find>
       <find>ProjectileMover</find>
       <find>attack</find>
@@ -566,9 +474,7 @@
       <find>weapon</find>
       <find>regen</find>
       <find>factorPower</find>
-      <find>title</find>
       <find>itemToEquip</find>
-      <find>LaunchSpell</find>
       <find>LaunchSpe</find>
       <find>ZoneCoroutine</find>
       <find>canDealDamages</find>
@@ -577,10 +483,13 @@
       <find>CalculateIfDead</find>
       <find>IPointerClickHandler</find>
       <find>rush01/Assets/Scripts/UI/ItemIcon.cs</find>
-      <find>name</find>
       <find>enemies</find>
       <find>lifeTIme</find>
       <find>spellLevel</find>
+      <find>name</find>
+      <find>.getSpell(</find>
+      <find>title</find>
+      <find>LaunchSpell</find>
       <find>LaunchDirectSpell</find>
     </findStrings>
   </component>
@@ -650,16 +559,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ToolTips.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/SkillBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ItemIcon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpellManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpellScript.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="472" />
-    <option name="y" value="155" />
+    <option name="y" value="164" />
     <option name="width" value="2088" />
     <option name="height" value="1188" />
   </component>
@@ -746,12 +655,12 @@
       <workItem from="1559422137407" duration="7451000" />
       <workItem from="1559468882169" duration="10473000" />
       <workItem from="1559487735899" duration="4157000" />
-      <workItem from="1559492689295" duration="4319000" />
+      <workItem from="1559492689295" duration="5013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44620000" />
+    <option name="totallyTimeSpent" value="45314000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -986,21 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/SkillBar.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding>
-            <marker date="1559492992000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1559492992000" expanded="true" signature="114:729" ph="{...}" />
-            <marker date="1559492992000" expanded="true" signature="259:499" ph="{...}" />
-            <marker date="1559492992000" expanded="true" signature="358:496" ph="{...}" />
-            <marker date="1559492992000" expanded="true" signature="539:725" ph="{...}" />
-            <marker date="1559492992000" expanded="true" signature="588:706" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/AssetStore/AAA Projectiles/Scripts/ProjectileMover.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1113,8 +1007,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/ItemIcon.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+        <state relative-caret-position="509">
+          <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
           <folding>
             <marker date="1559496264000" expanded="false" signature="6:110" ph="..." />
             <marker date="1559496264000" expanded="true" signature="128:167" ph="{...}" />
@@ -1141,26 +1035,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpellManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/SkillBar.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="360">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
           <folding>
-            <marker date="1559497005000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1559497005000" expanded="true" signature="121:1475" ph="{...}" />
-            <marker date="1559497005000" expanded="true" signature="493:581" ph="{...}" />
-            <marker date="1559497005000" expanded="true" signature="607:921" ph="{...}" />
-            <marker date="1559497005000" expanded="true" signature="966:1142" ph="{...}" />
-            <marker date="1559497005000" expanded="true" signature="1185:1316" ph="{...}" />
-            <marker date="1559497005000" expanded="true" signature="1365:1473" ph="{...}" />
+            <marker date="1559492992000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1559492992000" expanded="true" signature="114:729" ph="{...}" />
+            <marker date="1559492992000" expanded="true" signature="259:499" ph="{...}" />
+            <marker date="1559492992000" expanded="true" signature="358:496" ph="{...}" />
+            <marker date="1559492992000" expanded="true" signature="539:725" ph="{...}" />
+            <marker date="1559492992000" expanded="true" signature="588:706" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="210" column="25" selection-start-line="210" selection-start-column="25" selection-end-line="210" selection-end-column="25" />
+        <state relative-caret-position="295">
+          <caret line="201" column="47" selection-start-line="201" selection-start-column="47" selection-end-line="201" selection-end-column="47" />
           <folding>
             <marker date="1559497074000" expanded="false" signature="6:100" ph="..." />
             <marker date="1559497074000" expanded="true" signature="145:6364" ph="{...}" />
@@ -1198,20 +1091,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpellScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="651">
+          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
           <folding>
-            <marker date="1559497074000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1559497074000" expanded="true" signature="120:2748" ph="{...}" />
-            <marker date="1559497074000" expanded="true" signature="848:1723" ph="{...}" />
-            <marker date="1559497074000" expanded="true" signature="1100:1365" ph="{...}" />
-            <marker date="1559497074000" expanded="true" signature="1390:1704" ph="{...}" />
-            <marker date="1559497074000" expanded="true" signature="1434:1694" ph="{...}" />
-            <marker date="1559497074000" expanded="true" signature="1773:1884" ph="{...}" />
-            <marker date="1559497074000" expanded="true" signature="1927:2068" ph="{...}" />
-            <marker date="1559497074000" expanded="true" signature="2093:2383" ph="{...}" />
-            <marker date="1559497074000" expanded="true" signature="2417:2746" ph="{...}" />
-            <marker date="1559497074000" expanded="true" signature="2455:2662" ph="{...}" />
+            <marker date="1559497771000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1559497771000" expanded="true" signature="120:2840" ph="{...}" />
+            <marker date="1559497771000" expanded="true" signature="848:1815" ph="{...}" />
+            <marker date="1559497771000" expanded="true" signature="1100:1365" ph="{...}" />
+            <marker date="1559497771000" expanded="true" signature="1390:1796" ph="{...}" />
+            <marker date="1559497771000" expanded="true" signature="1434:1786" ph="{...}" />
+            <marker date="1559497771000" expanded="true" signature="1538:1698" ph="{...}" />
+            <marker date="1559497771000" expanded="true" signature="1865:1976" ph="{...}" />
+            <marker date="1559497771000" expanded="true" signature="2019:2160" ph="{...}" />
+            <marker date="1559497771000" expanded="true" signature="2185:2475" ph="{...}" />
+            <marker date="1559497771000" expanded="true" signature="2509:2838" ph="{...}" />
+            <marker date="1559497771000" expanded="true" signature="2547:2754" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpellManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding>
+            <marker date="1559497669000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1559497669000" expanded="true" signature="121:1607" ph="{...}" />
+            <marker date="1559497669000" expanded="true" signature="493:581" ph="{...}" />
+            <marker date="1559497669000" expanded="true" signature="607:1053" ph="{...}" />
+            <marker date="1559497669000" expanded="true" signature="717:908" ph="{...}" />
+            <marker date="1559497669000" expanded="true" signature="1098:1274" ph="{...}" />
+            <marker date="1559497669000" expanded="true" signature="1317:1448" ph="{...}" />
+            <marker date="1559497669000" expanded="true" signature="1497:1605" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -17,8 +17,13 @@ public class SpellManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        Debug.Log("PLSLSS");
         foreach (GameObject spell in spellValues)
+        {
+            
+            Debug.Log(spell.GetComponent<SpellScript>().displayName);
             _spellDictionary.Add(spell.GetComponent<SpellScript>().displayName, spell);
+        }
         foreach (GameObject spell in spellValues)
             _spellLevelDictionary.Add(spell.GetComponent<SpellScript>().displayName, 1);
     }
