@@ -231,6 +231,17 @@ public class PlayerScript : CharacterScript
             }    
         }
     }
+    
+//    private void LaunchSelectZoneSpell(GameObject spell, Vector3 position)
+//    {
+//        
+//        
+//            SpellScript launchedSpell = Instantiate(spell, transform.position, transform.rotation).GetComponent<SpellScript>();
+//            launchedSpell.target = position;
+//            launchedSpell.spellLevel = spellManager.GetSpellLevel(spell.GetComponent<SpellScript>().displayName);
+//            launchedSpell.Start();
+//            
+//    }
 
     public void LaunchSpell(GameObject spell)
     {
