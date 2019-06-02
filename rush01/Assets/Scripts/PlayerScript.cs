@@ -190,12 +190,17 @@ public class PlayerScript : CharacterScript
         }
         else
             deathText.SetActive(true);
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-            Instantiate(SkillBar.Instance.getSpell(0), rightHand.transform.position, Quaternion.identity);
+        if (Input.GetKeyDown(KeyCode.Alpha1)) {
+            LaunchSpell(SkillBar.Instance.getSpell(0));
+        }
     }
-    
-    
-    
+
+    public void LaunchSpell(GameObject spell)
+    {
+        SpellScript launchedSpell = Instantiate(spell, transform.position, transform.rotation).GetComponent<SpellScript>();
+
+    }
+
     //ANIMATION EVENT || TEST
     public void TestInstanciateParticle()
     {
