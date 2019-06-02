@@ -2480,9 +2480,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb7441e0dbbdf45feab2267681925bf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyTarget: {fileID: 1707932182818942, guid: 8ea28397b82144a57afc8dd90b356bc3,
-    type: 2}
-  autoPotion: {fileID: 0}
+  enemyTarget: {fileID: 0}
+  autoPotion: {fileID: 1707932182818942, guid: 8ea28397b82144a57afc8dd90b356bc3, type: 2}
   displayName: Male Zombie
   life: 0
   maxLife: 0

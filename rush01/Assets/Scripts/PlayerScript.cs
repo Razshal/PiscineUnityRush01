@@ -213,8 +213,6 @@ public class PlayerScript : CharacterScript
         {
             LaunchDirectSpell(spell);
         }
-
-
     }
 
     //ANIMATION EVENT || TEST
