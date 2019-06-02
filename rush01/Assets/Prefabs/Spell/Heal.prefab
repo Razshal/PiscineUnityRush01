@@ -57,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1453626394136632}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 137.9843, y: 100, z: 106.23442}
+  m_LocalPosition: {x: 139.93758, y: 100, z: 102.076866}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4683462955272746}
@@ -224,15 +224,16 @@ MonoBehaviour:
   spellLevel: 1
   isZone: 0
   isPersonal: 1
-  isDirect: 0
-  isHeal: 0
-  damages: 10
-  SpellCoolDown: 1
+  isDirect: 1
+  isHeal: 1
+  minLevel: 1
+  damages: 20
+  spellCoolDown: 10
   lifeTime: 10
   zoneDamagesCooldown: 1
   speed: 0.2
-  displayName: IceRay
-  description: An ice ray that goes straight to the enemy
+  displayName: Heal
+  description: Restore life
   enemies: []
   hitOffset: 0.1
   UseFirePointRotation: 0

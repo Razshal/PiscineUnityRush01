@@ -146,6 +146,7 @@ public class CharacterScript : MonoBehaviour
 
     public void ReceiveLife(int healAmmount)
     {
+        Debug.Log(displayName + " received life : " + healAmmount);
         if (life + healAmmount > maxLife)
             life = maxLife;
         else
