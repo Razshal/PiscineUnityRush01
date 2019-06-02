@@ -167,26 +167,20 @@ public class CharacterScript : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-        if (state != State.DEAD)
-        {
-            if (enemyTarget)
-                navMeshAgent.SetDestination(enemyTarget.transform.position);
-
-            // Defines if target is reached
-            isInContact = navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance;
-        }
-    }
-
     protected void Update()
     {
         if (state != State.DEAD)
         {
+            
+            if (enemyTarget)
+                navMeshAgent.SetDestination(enemyTarget.transform.position);
+            // Defines if target is reached
+            isInContact = navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance;
+            
             // Sets states for animations and attack
             if (!isInContact)
                 state = State.RUN;
-            else if (enemyTarget && isInContact && enemyTarget.GetComponent<CharacterScript>().state != State.DEAD)
+            else if (!prioritaryWaypoint && enemyTarget && isInContact && enemyTarget.GetComponent<CharacterScript>().state != State.DEAD)
             {
                 transform.LookAt(enemyTarget.transform.position);
                 state = State.ATTACKING;

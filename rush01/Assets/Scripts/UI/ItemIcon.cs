@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public enum Type
 { eAll, eWeapon, eSkill, eConsumable };
 
-public class ItemIcon : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
+public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
 {
 
 	Quaternion rotation;
@@ -63,7 +63,7 @@ public class ItemIcon : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
 			if (type == Type.eConsumable || type == Type.eWeapon)
 			{
 				ItemPhysic ret = ConvertItem.Instance.ConvertToItemPhysic(GetComponent<ItemIcon>());
-				ret.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);	
+				ret.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			}
 			else
 			{
@@ -73,14 +73,6 @@ public class ItemIcon : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
 		}
 		GetComponent<CanvasGroup>().blocksRaycasts = true;
 	}
-
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        if (Input.GetKey(KeyCode.LeftShift) && player.skillPoints > 0 && spellManager.GetSpellLevel(title) < 5)
-        {
-            spellManager.IncreaseSpellLevel(title, player);
-        }
-    }
 
 	public void OnPointerEnter(PointerEventData eventData)
 	{

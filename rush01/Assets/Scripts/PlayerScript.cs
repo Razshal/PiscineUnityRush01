@@ -163,6 +163,7 @@ public class PlayerScript : CharacterScript
                 && !clickHit.collider.gameObject.CompareTag("Enemy")
                 && !statsUI.activeSelf)
             {
+                
                 navMeshAgent.SetDestination(clickHit.point);
                 prioritaryWaypoint = true;
                 enemyTarget = null;
@@ -208,6 +209,32 @@ public class PlayerScript : CharacterScript
         launchedSpell.Start();
     }
 
+    private void LaunchCloseSpell(GameObject spell)
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, navMeshAgent.stoppingDistance * 10.0f, LayerMask.GetMask("Enemy"));
+        if (hitColliders.Length > 0)
+        {
+            foreach (var collider in hitColliders)
+            {
+                SpellScript launchedSpell = Instantiate(spell, transform.position, transform.rotation).GetComponent<SpellScript>();
+                launchedSpell.target = collider.gameObject;
+                launchedSpell.spellLevel = spellManager.GetSpellLevel(spell.GetComponent<SpellScript>().displayName);
+                launchedSpell.Start();
+            }    
+        }
+    }
+    
+//    private void LaunchSelectZoneSpell(GameObject spell, Vector3 position)
+//    {
+//        
+//        
+//            SpellScript launchedSpell = Instantiate(spell, transform.position, transform.rotation).GetComponent<SpellScript>();
+//            launchedSpell.target = position;
+//            launchedSpell.spellLevel = spellManager.GetSpellLevel(spell.GetComponent<SpellScript>().displayName);
+//            launchedSpell.Start();
+//            
+//    }
+
     public void LaunchSpell(GameObject spell)
     {
         SpellScript spellScript = spell.GetComponent<SpellScript>();
@@ -217,6 +244,9 @@ public class PlayerScript : CharacterScript
         {
             LaunchDirectSpell(spell);
         }
+        else if ((spellScript.isDirect && !enemyTarget) && spellManager.GetSpellLevel(spellScript.displayName) > 0
+                                                        && spellManager.CanLaunchSpell(spellScript.displayName))
+            LaunchCloseSpell(spell);
         else
             Debug.Log("Cannot launch " + spellScript.displayName);
     }
@@ -225,5 +255,12 @@ public class PlayerScript : CharacterScript
     public void TestInstanciateParticle()
     {
         Instantiate(SkillBar.Instance.getSpell(0), rightHand.transform.position, Quaternion.identity);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        if (navMeshAgent)
+            Gizmos.DrawSphere(navMeshAgent.destination, 1);
     }
 }
