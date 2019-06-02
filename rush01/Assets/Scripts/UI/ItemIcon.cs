@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public enum Type
 { eAll, eWeapon, eSkill, eConsumable };
 
-public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
+public class ItemIcon : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
 {
 
 	Quaternion rotation;
@@ -14,12 +14,19 @@ public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 	public Type type = Type.eAll;
 	public string info;
 	public string name;
-
+    private SpellManager spellManager;
 	
 	public static ItemIcon ItemIconDrag;
 	private UiSlot _parentSlot;
 	private Vector3 _startPosition;
 	private Transform _startParent;
+    private PlayerScript player;
+
+	private void Start()
+	{
+        spellManager = SpellManager.Manager();
+        player = PlayerScript.ActivePlayer();
+	}
 
 	private void Awake()
 	{
@@ -66,6 +73,15 @@ public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 		}
 		GetComponent<CanvasGroup>().blocksRaycasts = true;
 	}
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (Input.GetKey(KeyCode.LeftShift) && player.skillPoints > 0 && spellManager.GetSpellLevel(name) < 5)
+        {
+            spellManager.IncreaseSpellLevel(name);
+            player.skillPoints--;
+        }
+    }
 
 	public void OnPointerEnter(PointerEventData eventData)
 	{

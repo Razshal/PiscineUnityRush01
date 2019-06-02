@@ -26,6 +26,11 @@ public class PlayerScript : CharacterScript
     public float radiusDrop = 1.0f;
     public GameObject deathText;
 
+    public static PlayerScript ActivePlayer()
+    {
+        return GameObject.FindWithTag("Player").GetComponent<PlayerScript>();
+    }
+
     //Event Function
     public void OnEnable()
     {
@@ -183,7 +188,6 @@ public class PlayerScript : CharacterScript
                 else
                     inventory.Hide();
             }
-
             if (Input.GetKeyDown(KeyCode.P))
             {
                 if (characterSystem.isHided())

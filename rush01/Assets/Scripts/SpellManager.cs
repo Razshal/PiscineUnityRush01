@@ -9,6 +9,11 @@ public class SpellManager : MonoBehaviour
     public Dictionary<string, int> _spellLevelDictionary = new Dictionary<string, int>();
     [SerializeField] List<GameObject> spellValues = new List<GameObject>();
 
+    public static SpellManager Manager()
+    {
+        return GameObject.Find("GameManager").GetComponent<SpellManager>();
+    }
+
     private void Awake()
     {
         Instance = this;
