@@ -33,15 +33,14 @@ public class ProjectileMover : SpellScript
         }
 	}
 
-    new private void OnTriggerEnter(Collider other)
+    new private void OnTriggerStay(Collider other)
     {
-        base.OnTriggerEnter(other);
+        base.OnTriggerStay(other);
 
-        speed = 0;
         Quaternion rot = transform.rotation;
         Vector3 pos = transform.position;
 
-        if (hit != null)
+        if (hit != null && !other.isTrigger && other.gameObject == target)
         {
             var hitInstance = Instantiate(hit, pos, rot);
             if (UseFirePointRotation)
@@ -57,7 +56,7 @@ public class ProjectileMover : SpellScript
                 var hitPsParts = hitInstance.transform.GetChild(0).GetComponent<ParticleSystem>();
                 Destroy(hitInstance, hitPsParts.main.duration);
             }
+			Destroy(gameObject);
         }
-        Destroy(gameObject);
     }
 }

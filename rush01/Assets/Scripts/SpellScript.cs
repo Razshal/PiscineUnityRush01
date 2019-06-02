@@ -25,14 +25,15 @@ public class SpellScript : MonoBehaviour
 
     protected List<GameObject> enemies = new List<GameObject>();
 
-    protected void OnTriggerEnter(Collider other)
+    protected void OnTriggerStay(Collider other)
     {
         enemies.Add(other.gameObject);
         if (canDealDamages && isDirect && target && other.gameObject == target)
         {
             target.GetComponent<CharacterScript>().ReceiveDirectDamages(damages);
             canDealDamages = false;
-            Destroy(gameObject);
+            GetComponent<AudioSource>().Play();
+            Destroy(gameObject, lifeTime);
         }
         else if (isZone && canDealDamages)
             StartCoroutine(ZoneCoroutine());
@@ -53,7 +54,7 @@ public class SpellScript : MonoBehaviour
         yield return new WaitForSeconds(zoneDamagesCooldown);
     }
 
-    protected void Start()
+    public void Start()
     {
         // Calculate spell stats
         damages *= spellLevel;
@@ -68,7 +69,7 @@ public class SpellScript : MonoBehaviour
 
     protected void FixedUpdate()
     {
-        if (isDirect)
+        if (isDirect && target)
         {
             transform.position = Vector3.MoveTowards(transform.position, target.transform.position + target.transform.up, speed);
             transform.LookAt(target.transform.position);
