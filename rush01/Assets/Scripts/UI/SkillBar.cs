@@ -24,7 +24,7 @@ public class SkillBar : UiHidable {
 	{
 		if (_slots[index].transform.childCount > 0)
 		{
-			return SpellManager.Instance.getSpell(_slots[index].transform.GetChild(0).GetComponent<ItemIcon>().name);
+			return SpellManager.Instance.getSpell(_slots[index].transform.GetChild(0).GetComponent<ItemIcon>().title);
 		}
 
 		return null;

@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 54868633039502690}
   - component: {fileID: 135273667642976978}
   - component: {fileID: 82521069598477624}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IceRay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4615132245352460}
   - component: {fileID: 198334339267689138}
   - component: {fileID: 199923231062571202}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SubRombs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:

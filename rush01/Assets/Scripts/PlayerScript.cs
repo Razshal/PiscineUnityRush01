@@ -209,10 +209,10 @@ public class PlayerScript : CharacterScript
 
     public void LaunchSpell(GameObject spell)
     {
-        if (spell.GetComponent<SpellScript>().isDirect && enemyTarget)
-        {
+        //if (spell.GetComponent<SpellScript>().isDirect && enemyTarget)
+        //{
             LaunchDirectSpell(spell);
-        }
+        //}
     }
 
     //ANIMATION EVENT || TEST

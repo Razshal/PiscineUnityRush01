@@ -69,7 +69,9 @@ public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
 	public void OnPointerEnter(PointerEventData eventData)
 	{
-		ItemPhysic itemPhysic = transform.GetChild(0).GetComponent<ItemPhysic>();
+		ItemPhysic itemPhysic = null;
+		if (transform.childCount > 0)
+			itemPhysic = transform.GetChild(0).GetComponent<ItemPhysic>();
 		if (type == Type.eSkill)
 		{
 			ProjectileMover spell = SpellManager.Instance.getSpell(name).GetComponent<ProjectileMover>();

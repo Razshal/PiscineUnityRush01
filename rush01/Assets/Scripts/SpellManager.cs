@@ -20,6 +20,7 @@ public class SpellManager : MonoBehaviour
 
     public GameObject getSpell(string name)
     {
+        Debug.Log("getSpell | MAnager  = " + name);
         if (_spellDictionary.ContainsKey(name))
             return _spellDictionary[name];
         return null;
