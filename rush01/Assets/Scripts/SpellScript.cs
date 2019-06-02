@@ -14,14 +14,16 @@ public class SpellScript : MonoBehaviour
     public bool isDirect = false;
 
     public int damages = 10;
-    public float SpellCoolDown = 1f;
-    public float lifeTime = 10;
-    public float damagesCooldown = 1;
+    public float SpellCoolDown = 10f;
+    public float lifeTime = 10f;
+    public float zoneDamagesCooldown = 1f;
+    public float speed = 15f;
+    public string displayName;
+    public string description = "A spell";
 
-    private List<GameObject> enemies = new List<GameObject>();
+    protected List<GameObject> enemies = new List<GameObject>();
 
-
-    private void OnTriggerEnter(Collider other)
+    protected void OnTriggerEnter(Collider other)
     {
         enemies.Add(other.gameObject);
         if (isDirect && target && other.gameObject == target)
@@ -33,22 +35,22 @@ public class SpellScript : MonoBehaviour
             StartCoroutine(ZoneCoroutine());
     }
 
-    private void OnTriggerExit(Collider other)
+    protected void OnTriggerExit(Collider other)
     {
         enemies.Remove(other.gameObject);
     }
 
-    private IEnumerator ZoneCoroutine()
+    protected IEnumerator ZoneCoroutine()
     {
         foreach (GameObject enemy in enemies)
         {
             if (enemy != startEntity)
                 enemy.GetComponent<CharacterScript>().ReceiveDirectDamages(damages);
         }
-        yield return new WaitForSeconds(damagesCooldown);
+        yield return new WaitForSeconds(zoneDamagesCooldown);
     }
 
-    private void Start()
+    protected void Start()
     {
         // Calculate spell stats
         damages *= spellLevel;
@@ -61,11 +63,11 @@ public class SpellScript : MonoBehaviour
         Destroy(gameObject, lifeTime);
     }
 
-    private void FixedUpdate()
+    protected void FixedUpdate()
     {
         if (isDirect)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position + target.transform.up, 0.1f);
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position + target.transform.up, speed);
             transform.LookAt(target.transform.position);
         }
         if (isPersonal)
