@@ -86,6 +86,7 @@ public class PlayerScript : CharacterScript
             && other.gameObject.GetComponent<CharacterScript>().state != State.DEAD
             && !prioritaryWaypoint)
         {
+            Debug.Log("OnTriggerStay Maya");
             enemyTarget = other.gameObject;
         }
     }
@@ -160,6 +161,7 @@ public class PlayerScript : CharacterScript
 
     new void Update()
     {
+        Debug.Log("Update Maya");
         base.Update();
 
 
@@ -171,6 +173,8 @@ public class PlayerScript : CharacterScript
                 && !clickHit.collider.gameObject.CompareTag("Enemy")
                 && !statsUI.activeSelf)
             {
+                
+                Debug.Log("--------------------------------------------------------------------");
                 navMeshAgent.SetDestination(clickHit.point);
                 prioritaryWaypoint = true;
                 enemyTarget = null;
@@ -224,5 +228,12 @@ public class PlayerScript : CharacterScript
     public void TestInstanciateParticle()
     {
         Instantiate(SkillBar.Instance.getSpell(0), rightHand.transform.position, Quaternion.identity);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        if (navMeshAgent)
+            Gizmos.DrawSphere(navMeshAgent.destination, 1);
     }
 }

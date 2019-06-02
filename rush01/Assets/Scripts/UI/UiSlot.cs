@@ -19,11 +19,13 @@ public class UiSlot : MonoBehaviour, IDropHandler, IPointerClickHandler
        
        public delegate void ClickConsumable( Consumable item);
        public static event ClickConsumable OnConsumableUse;
-       
+       private PlayerScript player;
+
        private void Start()
        {
               if (transform.childCount > 0)
                      ItemIcon = transform.GetChild(0).GetComponent<ItemIcon>();
+              player = PlayerScript.ActivePlayer();
        }
 
        public bool canAdd(ItemIcon newItemIcon)
@@ -57,6 +59,15 @@ public class UiSlot : MonoBehaviour, IDropHandler, IPointerClickHandler
        {
               if (!ItemIcon)
                      return;
+              if (Input.GetKey(KeyCode.LeftShift))
+              {
+                     if (player.skillPoints > 0 && SpellManager.Instance.GetSpellLevel(ItemIcon.title) < 5)
+                     {
+                            SpellManager.Instance.IncreaseSpellLevel(ItemIcon.title);
+                            player.skillPoints--;                            
+                     }
+              }
+              
               if (ItemIcon.GetComponent<ItemIcon>().type == Type.eWeapon)
               {
                      if (transform.parent.parent != CharacterPannel.Instance.transform)
