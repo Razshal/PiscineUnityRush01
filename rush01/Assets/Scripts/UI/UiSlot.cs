@@ -63,8 +63,7 @@ public class UiSlot : MonoBehaviour, IDropHandler, IPointerClickHandler
               {
                      if (player.skillPoints > 0 && SpellManager.Instance.GetSpellLevel(ItemIcon.title) < 5)
                      {
-                            SpellManager.Instance.IncreaseSpellLevel(ItemIcon.title);
-                            player.skillPoints--;                            
+                            SpellManager.Instance.IncreaseSpellLevel(ItemIcon.title, player);
                      }
               }
               

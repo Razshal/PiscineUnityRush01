@@ -683,12 +683,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   startEntity: {fileID: 0}
-  spellLevel: 1
+  spellLevel: 6
   isZone: 1
   isPersonal: 0
   isDirect: 0
+  isHeal: 0
+  minLevel: 6
   damages: 2
-  SpellCoolDown: 5
+  spellCoolDown: 10
   lifeTime: 3
   zoneDamagesCooldown: 0.3
   speed: 0

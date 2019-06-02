@@ -225,6 +225,7 @@ MonoBehaviour:
   isZone: 0
   isPersonal: 1
   isDirect: 0
+  isHeal: 0
   damages: 10
   SpellCoolDown: 1
   lifeTime: 10

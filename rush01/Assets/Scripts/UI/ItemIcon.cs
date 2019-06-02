@@ -74,15 +74,6 @@ public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 		GetComponent<CanvasGroup>().blocksRaycasts = true;
 	}
 
-    //public void OnPointerClick(PointerEventData eventData)
-    //{
-    //    if (Input.GetKey(KeyCode.LeftShift) && player.skillPoints > 0 && spellManager.GetSpellLevel(title) < 5)
-    //    {
-    //        spellManager.IncreaseSpellLevel(title);
-    //        player.skillPoints--;
-    //    }
-    //}
-
 	public void OnPointerEnter(PointerEventData eventData)
 	{
 		ItemPhysic itemPhysic = null;
@@ -95,7 +86,7 @@ public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 			{
 				title = spell.displayName;
 				ToolTips.Instance.setTitleColor();
-				info = "Level:" + spell.spellLevel.ToString() + "\nDamage:" + spell.damages.ToString() + "\n CoolDown:" + spell.SpellCoolDown.ToString();
+				info = "Level:" + spell.spellLevel.ToString() + "\nDamage:" + spell.damages.ToString() + "\n CoolDown:" + spell.spellCoolDown.ToString();
 			}
 		}
 

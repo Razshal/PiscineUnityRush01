@@ -11,7 +11,7 @@ public class PlayerScript : CharacterScript
     public UiHidable characterSystem;
     private GameObject _weapon;
     private SpellManager spellManager;
-    
+
     private RaycastHit clickHit;
     private Camera camera;
     private int frameCount;
@@ -45,7 +45,7 @@ public class PlayerScript : CharacterScript
         UiSlot.OnWeaponUnEquip -= UnEquipWeapon;
         UiSlot.OnConsumableUse -= ConsumableUse;
     }
-    
+
     void EquipWeapon(GameObject item, Rarity rarity)
     {
         Debug.Log("EquipWeapon");
@@ -66,7 +66,7 @@ public class PlayerScript : CharacterScript
             ReceiveLife(item.regenHp);
     }
     //End Event Function
-    
+
     new void Start()
     {
         base.Start();
@@ -100,7 +100,7 @@ public class PlayerScript : CharacterScript
                 Inventory.Instance.addItem(ConvertItem.Instance.ConvertToItemIcon(ip));
         }
     }
-    
+
     public void ReceiveExperience(int newXp)
     {
         experience += newXp;
@@ -118,14 +118,6 @@ public class PlayerScript : CharacterScript
             levelup.time = 0;
             levelup.Play();
         }
-    }
-
-    public void ReceiveLife(int healAmmount)
-    {
-        if (life + healAmmount > maxLife)
-            life = maxLife;
-        else
-            life += healAmmount;
     }
 
     public void OpenStats()
@@ -246,12 +238,15 @@ public class PlayerScript : CharacterScript
     public void LaunchSpell(GameObject spell)
     {
         SpellScript spellScript = spell.GetComponent<SpellScript>();
-        if (((spellScript.isDirect && enemyTarget) || (spellScript.isZone)) && spellManager.GetSpellLevel(spellScript.displayName) > 0)
-            LaunchDirectSpell(spell);
-        else if (spellScript.isDirect && !enemyTarget && spellManager.GetSpellLevel(spellScript.displayName) > 0)
+        if (((spellScript.isDirect && enemyTarget) || (spellScript.isZone))
+            && spellManager.GetSpellLevel(spellScript.displayName) > 0
+            && spellManager.CanLaunchSpell(spellScript.displayName)) 
         {
-            LaunchCloseSpell(spell);   
+            LaunchDirectSpell(spell);
         }
+        else if ((spellScript.isDirect && !enemyTarget) && spellManager.GetSpellLevel(spellScript.displayName) > 0
+                                                        && spellManager.CanLaunchSpell(spellScript.displayName))
+            LaunchCloseSpell(spell);
         else
             Debug.Log("Cannot launch " + spellScript.displayName);
     }

@@ -12,9 +12,11 @@ public class SpellScript : MonoBehaviour
     public bool isZone = false;
     public bool isPersonal = false;
     public bool isDirect = false;
+    public bool isHeal = false;
 
+    public int minLevel = 1;
     public int damages = 10;
-    public float SpellCoolDown = 10f;
+    public float spellCoolDown = 10f;
     public float lifeTime = 10f;
     public float zoneDamagesCooldown = 1f;
     private float _timerZoneDamagesCooldown = 0.0f;
@@ -31,8 +33,9 @@ public class SpellScript : MonoBehaviour
 
     protected void OnTriggerStay(Collider other)
     {
-        //Debug.Log("Spell: " + name + "OnTriggerStay");
-        if (!enemies.Contains(other.gameObject)) //Patch ntoniolo
+        if (isHeal)
+            target.GetComponent<PlayerScript>().ReceiveLife(damages);
+        if (!enemies.Contains(other.gameObject))
             enemies.Add(other.gameObject);
         if (canDealDamages && isDirect && target && other.gameObject == target)
         {
@@ -77,7 +80,6 @@ public class SpellScript : MonoBehaviour
         // Calculate spell stats
         damages *= spellLevel;
         lifeTime *= spellLevel;
-        SpellCoolDown = SpellCoolDown / spellLevel;
 
         if (startEntity)
             transform.position = startEntity.transform.position;
@@ -92,6 +94,9 @@ public class SpellScript : MonoBehaviour
             transform.LookAt(target.transform.position);
         }
         if (isPersonal)
-            transform.parent = startEntity.transform;
+        {
+			transform.parent = startEntity.transform;
+            transform.position = Vector3.zero;
+        }
     }
 }
