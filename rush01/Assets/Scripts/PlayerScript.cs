@@ -5,6 +5,12 @@ using UnityEngine.UI;
 
 public class PlayerScript : CharacterScript
 {
+    public GameObject rightHand;
+    public GameObject leftHand;
+    public UiHidable inventory;
+    public UiHidable characterSystem;
+    private GameObject _weapon;
+    
     private RaycastHit clickHit;
     private Camera camera;
     private int frameCount;
@@ -19,6 +25,40 @@ public class PlayerScript : CharacterScript
     public float radiusDrop = 1.0f;
     public GameObject deathText;
 
+    //Event Function
+    public void OnEnable()
+    {
+        UiSlot.OnWeaponEquip += EquipWeapon;
+        UiSlot.OnWeaponUnEquip += UnEquipWeapon;
+        UiSlot.OnConsumableUse += ConsumableUse;
+    }
+
+    public void OnDisable()
+    {
+        UiSlot.OnWeaponEquip -= EquipWeapon;
+        UiSlot.OnWeaponUnEquip -= UnEquipWeapon;
+        UiSlot.OnConsumableUse -= ConsumableUse;
+    }
+    
+    void EquipWeapon(GameObject item)
+    {
+        Debug.Log("EquipWeapon");
+        _weapon = Instantiate(item, rightHand.transform);
+    }
+
+    void UnEquipWeapon(GameObject item)
+    {
+        Debug.Log("UnEquipWeapon");
+        if (_weapon)
+            Destroy(_weapon);
+    }
+
+    void ConsumableUse(Consumable item)
+    {
+        //hp += item.regenHp ...
+    }
+    //End Event Function
+    
     new void Start()
     {
         base.Start();
@@ -132,9 +172,33 @@ public class PlayerScript : CharacterScript
                 ReceiveExperience(level * 150);
             if (Input.GetKeyDown(KeyCode.E))
                 Drop();
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                if (inventory.isHided())
+                    inventory.Show();
+                else
+                    inventory.Hide();
+            }
+
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                if (characterSystem.isHided())
+                    characterSystem.Show();
+                else
+                    characterSystem.Hide();
+            }
         }
         else
             deathText.SetActive(true);
-
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+            Instantiate(SkillBar.Instance.getSpell(0), rightHand.transform.position, Quaternion.identity);
+    }
+    
+    
+    
+    //ANIMATION EVENT || TEST
+    public void TestInstanciateParticle()
+    {
+        Instantiate(SkillBar.Instance.getSpell(0), rightHand.transform.position, Quaternion.identity);
     }
 }

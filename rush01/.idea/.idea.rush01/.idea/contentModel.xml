@@ -19,7 +19,6 @@
             <e p="LWRP_Blend_CenterGlow.shader" t="Include" />
             <e p="LWRP_Blend_DistortTexture.shader" t="Include" />
             <e p="LWRP_Electricity.shader" t="Include" />
-            <e p="ShaderChanger.cs" t="Include" />
           </e>
           <e p="Prefabs" t="Include">
             <e p="Projectiles(Speed)" t="Include">
@@ -222,6 +221,9 @@
           </e>
         </e>
       </e>
+      <e p="Assets/Editor" t="Include">
+        <e p="ShaderChanger.cs" t="Include" />
+      </e>
       <e p="Assets/Low Polygon Potions Pack" t="Include">
         <e p="Other Assets" t="Include">
           <e p="Scripts" t="Include">
@@ -253,6 +255,7 @@
         <e p="OutlineGrowEffect.cs" t="Include" />
         <e p="PlayerScript.cs" t="Include" />
         <e p="RarityManager.cs" t="Include" />
+        <e p="SkillButtonScript.cs" t="Include" />
         <e p="SpawnerScript.cs" t="Include" />
         <e p="SpellManager.cs" t="Include" />
         <e p="SpellScript.cs" t="Include" />
@@ -263,8 +266,8 @@
           <e p="ItemIcon.cs" t="Include" />
           <e p="ItemPhysic.cs" t="Include" />
           <e p="SkillBar.cs" t="Include" />
-          <e p="TestPlayerUI.cs" t="Include" />
           <e p="ToolTips.cs" t="Include" />
+          <e p="UiHidable.cs" t="Include" />
           <e p="UiSlot.cs" t="Include" />
         </e>
       </e>

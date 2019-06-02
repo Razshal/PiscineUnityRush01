@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SkillBar : MonoBehaviour {
+public class SkillBar : UiHidable {
 
 	public static SkillBar Instance { get; private set; }
 
 	private List<UiSlot> _slots = new List<UiSlot>();
 
 	
-	private void Awake()
+	protected override void Awake()
 	{
+		base.Awake();
 		Instance = this;
 		for (int i = 0; i < transform.GetChild(0).childCount; i++)
 		{

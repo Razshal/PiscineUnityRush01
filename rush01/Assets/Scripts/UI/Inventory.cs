@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+public class Inventory : UiHidable
 {
     public static Inventory Instance { get; private set; }
 
     [SerializeField]
     private List<UiSlot> _slots = new List<UiSlot>();
     
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         Instance = this;
         for (int i = 0; i < transform.GetChild(0).childCount; i++)
         {
