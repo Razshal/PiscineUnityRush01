@@ -21,14 +21,14 @@ public class SpellManager : MonoBehaviour
         Debug.Log("PLSLSS");
         foreach (GameObject spell in spellValues)
         {
-
             Debug.Log(spell.GetComponent<SpellScript>().displayName);
             _spellDictionary.Add(spell.GetComponent<SpellScript>().displayName, spell);
         }
-        foreach (GameObject spell in spellValues)
+        foreach (GameObject spell in spellValues) 
             _spellLevelDictionary.Add(spell.GetComponent<SpellScript>().displayName, 0);
         foreach (GameObject spell in spellValues)
-            _spellCoolDownDictionary.Add(spell.GetComponent<SpellScript>().displayName, spell.GetComponent<SpellScript>().spellCoolDown);
+            _spellCoolDownDictionary.Add(spell.GetComponent<SpellScript>().displayName, 
+                                         spell.GetComponent<SpellScript>().spellCoolDown);
     }
 
     public GameObject getSpell(string t)
