@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public enum Type
 { eAll, eWeapon, eSkill, eConsumable };
 
-public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
+public class ItemIcon : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
 {
 
 	Quaternion rotation;
@@ -14,12 +14,19 @@ public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 	public Type type = Type.eAll;
 	public string info;
 	public string title;
-
+    private SpellManager spellManager;
 	
 	public static ItemIcon ItemIconDrag;
 	private UiSlot _parentSlot;
 	private Vector3 _startPosition;
 	private Transform _startParent;
+    private PlayerScript player;
+
+	private void Start()
+	{
+        spellManager = SpellManager.Manager();
+        player = PlayerScript.ActivePlayer();
+	}
 
 	private void Awake()
 	{
@@ -67,6 +74,15 @@ public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 		GetComponent<CanvasGroup>().blocksRaycasts = true;
 	}
 
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (Input.GetKey(KeyCode.LeftShift) && player.skillPoints > 0 && spellManager.GetSpellLevel(title) < 5)
+        {
+            spellManager.IncreaseSpellLevel(title);
+            player.skillPoints--;
+        }
+    }
+
 	public void OnPointerEnter(PointerEventData eventData)
 	{
 		ItemPhysic itemPhysic = null;
@@ -74,7 +90,7 @@ public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 			itemPhysic = transform.GetChild(0).GetComponent<ItemPhysic>();
 		if (type == Type.eSkill)
 		{
-			ProjectileMover spell = SpellManager.Instance.getSpell(name).GetComponent<ProjectileMover>();
+			ProjectileMover spell = SpellManager.Instance.getSpell(title).GetComponent<ProjectileMover>();
 			if (spell != null)
 			{
 				title = spell.displayName;

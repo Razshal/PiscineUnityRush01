@@ -6,8 +6,13 @@ public class SpellManager : MonoBehaviour
 {
     public static SpellManager Instance { get; private set; }
     private Dictionary<string, GameObject> _spellDictionary = new Dictionary<string, GameObject>();
-    private Dictionary<string, int> _spellLevelDictionary = new Dictionary<string, int>();
+    public Dictionary<string, int> _spellLevelDictionary = new Dictionary<string, int>();
     [SerializeField] List<GameObject> spellValues = new List<GameObject>();
+
+    public static SpellManager Manager()
+    {
+        return GameObject.Find("GameManager").GetComponent<SpellManager>();
+    }
 
     private void Awake()
     {
@@ -15,7 +20,7 @@ public class SpellManager : MonoBehaviour
         foreach (GameObject spell in spellValues)
             _spellDictionary.Add(spell.GetComponent<SpellScript>().displayName, spell);
         foreach (GameObject spell in spellValues)
-            _spellLevelDictionary.Add(spell.GetComponent<SpellScript>().displayName, 0);
+            _spellLevelDictionary.Add(spell.GetComponent<SpellScript>().displayName, 1);
     }
 
     public GameObject getSpell(string name)

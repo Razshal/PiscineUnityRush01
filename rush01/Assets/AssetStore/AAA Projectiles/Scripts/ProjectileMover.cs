@@ -56,7 +56,7 @@ public class ProjectileMover : SpellScript
                 var hitPsParts = hitInstance.transform.GetChild(0).GetComponent<ParticleSystem>();
                 Destroy(hitInstance, hitPsParts.main.duration);
             }
-			Destroy(gameObject);
+			Destroy(gameObject, 1);
         }
     }
 }

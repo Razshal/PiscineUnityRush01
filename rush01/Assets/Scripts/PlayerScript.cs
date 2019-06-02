@@ -26,6 +26,11 @@ public class PlayerScript : CharacterScript
     public float radiusDrop = 1.0f;
     public GameObject deathText;
 
+    public static PlayerScript ActivePlayer()
+    {
+        return GameObject.FindWithTag("Player").GetComponent<PlayerScript>();
+    }
+
     //Event Function
     public void OnEnable()
     {
@@ -183,7 +188,6 @@ public class PlayerScript : CharacterScript
                 else
                     inventory.Hide();
             }
-
             if (Input.GetKeyDown(KeyCode.P))
             {
                 if (characterSystem.isHided())
@@ -203,16 +207,17 @@ public class PlayerScript : CharacterScript
     {
         SpellScript launchedSpell = Instantiate(spell, transform.position, transform.rotation).GetComponent<SpellScript>();
         launchedSpell.target = enemyTarget;
-        launchedSpell.spellLevel = spellManager.GetSpellLevel(launchedSpell.name);
+        launchedSpell.spellLevel = spellManager.GetSpellLevel(spell.GetComponent<SpellScript>().displayName);
         launchedSpell.Start();
     }
 
     public void LaunchSpell(GameObject spell)
     {
-        //if (spell.GetComponent<SpellScript>().isDirect && enemyTarget)
-        //{
+        SpellScript spellScript = spell.GetComponent<SpellScript>();
+        if (((spellScript.isDirect && enemyTarget) || (spellScript.isZone)) && spellManager.GetSpellLevel(spellScript.displayName) > 0)
             LaunchDirectSpell(spell);
-        //}
+        else
+            Debug.Log("Cannot launch " + spellScript.displayName);
     }
 
     //ANIMATION EVENT || TEST

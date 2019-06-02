@@ -43,11 +43,6 @@
             <e p="Electricity.shader" t="Include" />
           </e>
         </e>
-        <e p="Fantasy nature" t="Include">
-          <e p="Double Sided Shaders" t="Include">
-            <e p="Double Sided Transparent Diffuse Bump Cutout.shader" t="Include" />
-          </e>
-        </e>
         <e p="low poly medieval buildings" t="Include">
           <e p="Readme.txt" t="Include" />
         </e>

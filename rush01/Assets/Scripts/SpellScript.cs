@@ -77,7 +77,6 @@ public class SpellScript : MonoBehaviour
 
         if (startEntity)
             transform.position = startEntity.transform.position;
-
         Destroy(gameObject, lifeTime);
     }
 
