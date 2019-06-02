@@ -18,6 +18,7 @@ public class SpellScript : MonoBehaviour
     public float lifeTime = 10f;
     public float zoneDamagesCooldown = 1f;
     public float speed = 15f;
+    public string displayName;
     public string description = "A spell";
 
     protected List<GameObject> enemies = new List<GameObject>();

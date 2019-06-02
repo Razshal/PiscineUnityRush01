@@ -64,7 +64,7 @@ public class PlayerScript : CharacterScript
         statsUI.SetActive(!statsUI.activeSelf);
     }
 
-    private void AddSkill()
+    private void AddStat()
     {
         statsPoints--;
         ComputeStats();
@@ -74,19 +74,19 @@ public class PlayerScript : CharacterScript
     public void AddAgility()
     {
         agility++;
-        AddSkill();
+        AddStat();
     }
 
     public void AddStrength()
     {
         strength++;
-        AddSkill();
+        AddStat();
     }
 
     public void AddConst()
     {
         constitution++;
-        AddSkill();
+        AddStat();
     }
 
     new void Update()
