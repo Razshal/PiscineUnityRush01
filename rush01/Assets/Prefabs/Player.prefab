@@ -5510,7 +5510,7 @@ MonoBehaviour:
   inventory: {fileID: 114139622974771616}
   characterSystem: {fileID: 114969367185727708}
   enemyHover: {fileID: 0}
-  statsUI: {fileID: 0}
+  statsUI: {fileID: 1352537037721244, guid: aa161c661703641cda7ce0b834a0ce4e, type: 2}
   statsPoints: 0
   skillPoints: 0
   levelup: {fileID: 198668410259709470}

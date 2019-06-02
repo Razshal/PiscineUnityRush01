@@ -51,6 +51,14 @@
         <e p="low poly medieval buildings" t="Include">
           <e p="Readme.txt" t="Include" />
         </e>
+        <e p="Low Polygon Potions Pack" t="Include">
+          <e p="Other Assets" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CreatePrefabFromSelected.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Readme.txt" t="Include" />
+        </e>
         <e p="NatureStarterKit2" t="Include">
           <e p="Editor" t="Include">
             <e p="ImageEffects" t="Include">
@@ -224,14 +232,6 @@
       <e p="Assets/Editor" t="Include">
         <e p="ShaderChanger.cs" t="Include" />
       </e>
-      <e p="Assets/Low Polygon Potions Pack" t="Include">
-        <e p="Other Assets" t="Include">
-          <e p="Scripts" t="Include">
-            <e p="CreatePrefabFromSelected.cs" t="Include" />
-          </e>
-        </e>
-        <e p="Readme.txt" t="Include" />
-      </e>
       <e p="Assets/QuickOutline" t="Include">
         <e p="Readme.txt" t="Include" />
         <e p="Resources" t="Include">
@@ -245,6 +245,7 @@
         </e>
       </e>
       <e p="Assets/Scripts" t="Include">
+        <e p="AutoPotion.cs" t="Include" />
         <e p="CameraScript.cs" t="Include" />
         <e p="CharacterScript.cs" t="Include" />
         <e p="Consumable.cs" t="Include" />
@@ -270,6 +271,7 @@
           <e p="UiHidable.cs" t="Include" />
           <e p="UiSlot.cs" t="Include" />
         </e>
+        <e p="Weapon.cs" t="Include" />
       </e>
       <e p="Assets/SpellBookPreface" t="Include">
         <e p="Readme.txt" t="Include" />

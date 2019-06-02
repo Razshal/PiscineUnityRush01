@@ -21,6 +21,9 @@ GameObject:
   - component: {fileID: 4267813574294556}
   - component: {fileID: 33218685171482494}
   - component: {fileID: 23463743618476266}
+  - component: {fileID: 114584866990201316}
+  - component: {fileID: 114556538753694898}
+  - component: {fileID: 114505429452365624}
   m_Layer: 8
   m_Name: DouxWeapon
   m_TagString: Untagged
@@ -82,3 +85,54 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1633218376152140}
   m_Mesh: {fileID: 4300000, guid: 145a869cd54f14cfdb60bb3e3757f5d5, type: 3}
+--- !u!114 &114505429452365624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1633218376152140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b1ae834129d42aab9f28548178acc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  durationTransition: 2
+  timer: 0
+  _outline: {fileID: 0}
+  colorStart: {r: 0, g: 0, b: 0, a: 0}
+  colorEnd: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &114556538753694898
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1633218376152140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &114584866990201316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1633218376152140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e50ebba87902d433481883f7eb23f88e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rarity:
+    name: 
+    color: {r: 0, g: 0, b: 0, a: 0}
+    factorPower: 0
+    factorRarity: 0
+  damage: 5
+  attackSpeed: 1

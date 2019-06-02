@@ -12,7 +12,7 @@ public class UiSlot : MonoBehaviour, IDropHandler, IPointerClickHandler
        public ItemIcon ItemIcon;
        public Type slotType;
 
-       public delegate void ClickWeapon( GameObject item);
+       public delegate void ClickWeapon( GameObject item, Rarity rarity);
        public static event ClickWeapon OnWeaponEquip;
        public delegate void ClickUnWeapon( GameObject item);
        public static event ClickUnWeapon OnWeaponUnEquip;
@@ -70,7 +70,7 @@ public class UiSlot : MonoBehaviour, IDropHandler, IPointerClickHandler
                                    if (OnWeaponEquip != null)
                                    {
                                           Debug.Log("Call OnWeqponEquipEvent");
-                                          OnWeaponEquip(ItemIcon.itemToEquip);
+                                          OnWeaponEquip(ItemIcon.itemToEquip, ItemIcon.transform.GetChild(0).GetComponent<ItemPhysic>().rarity);
                                    }
                                    ItemIcon = null;       
                             }
