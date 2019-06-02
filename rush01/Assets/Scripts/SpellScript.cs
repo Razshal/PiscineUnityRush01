@@ -88,7 +88,7 @@ public class SpellScript : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, target.transform.position + target.transform.up, speed);
             transform.LookAt(target.transform.position);
         }
-        if (isPersonal && startEntity)
+        if (isPersonal)
         {
 			transform.parent = startEntity.transform;
             transform.position = Vector3.zero;
