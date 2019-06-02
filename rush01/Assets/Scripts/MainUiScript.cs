@@ -9,6 +9,7 @@ public class MainUiScript : MonoBehaviour {
     public Text lifeText;
     public Text xpText;
     public Text lvlText;
+    public Text skillPointsText;
 
     // Enemy UI
     public Slider enemyLifeSlider;
@@ -53,5 +54,6 @@ public class MainUiScript : MonoBehaviour {
         lifeText.text = player.life + "/" + player.maxLife;
         lifeSlider.maxValue = player.maxLife;
         lvlText.text = "LVL " + player.level;
+        skillPointsText.text = player.skillPoints + " points availables";
 	}
 }

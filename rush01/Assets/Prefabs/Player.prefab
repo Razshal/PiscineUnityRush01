@@ -3457,7 +3457,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1077493946710812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 132.13, y: 100.26, z: 99.94}
+  m_LocalPosition: {x: 128.3, y: -22.21, z: 113.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4377327095696512}
@@ -5244,7 +5244,7 @@ MonoBehaviour:
   itemToEquip: {fileID: 0}
   type: 2
   info: 
-  name: fire
+  name: IceRay
 --- !u!114 &114379763029489046
 MonoBehaviour:
   m_ObjectHideFlags: 1

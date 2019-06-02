@@ -44,7 +44,7 @@ MonoBehaviour:
   itemToEquip: {fileID: 0}
   type: 2
   info: 
-  name: fire
+  name: IceRay
 --- !u!114 &114310977876562638
 MonoBehaviour:
   m_ObjectHideFlags: 1

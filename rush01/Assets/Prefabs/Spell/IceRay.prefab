@@ -147,8 +147,10 @@ MonoBehaviour:
   damages: 10
   SpellCoolDown: 1
   lifeTime: 10
-  damagesCooldown: 1
+  zoneDamagesCooldown: 1
   speed: 0.2
+  displayName: IceRay
+  description: A spell
   hitOffset: 0.1
   UseFirePointRotation: 0
   hit: {fileID: 1231636063597364, guid: 3aa0fab185f378240b831342bde74b26, type: 2}
