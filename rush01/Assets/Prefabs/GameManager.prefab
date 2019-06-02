@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114787204419405536}
   - component: {fileID: 114150372071422142}
   - component: {fileID: 114423594410635964}
+  - component: {fileID: 114388902118020136}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -53,10 +54,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48a8b37aeda24d3ab6ea3a8900d8848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpellKeys:
-  - fire
-  SpellValues:
-  - {fileID: 1124310126471994, guid: 7dbae8c8060694410b798e76aca7382e, type: 2}
+  spellValues: []
+--- !u!114 &114388902118020136
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1474347412408806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c1ae416e14146fc8bf251694d95479, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loots:
+  - rate: 0.05
+    item: {fileID: 1896615553607456, guid: f63e650d0816544aa8b6f1d3f6913e45, type: 2}
+  - rate: 0.1
+    item: {fileID: 1615546242170994, guid: 2aa40f67abc7e4fd4b16b5399fa4cd94, type: 2}
+  - rate: 0.2
+    item: {fileID: 1891389806694306, guid: e13293a9cef8944be80bdd87b32e5f5e, type: 2}
 --- !u!114 &114423594410635964
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -72,19 +88,19 @@ MonoBehaviour:
   - name: Legendary
     color: {r: 1, g: 1, b: 0, a: 1}
     factorPower: 2
-    factorRarity: 0.02
-  - name: 0.04
-    color: {r: 0, g: 0, b: 0, a: 0}
-    factorPower: 0
-    factorRarity: 0
-  - name: 
-    color: {r: 0, g: 0, b: 0, a: 0}
-    factorPower: 0
-    factorRarity: 0
-  - name: 
-    color: {r: 0, g: 0, b: 0, a: 0}
-    factorPower: 0
-    factorRarity: 0
+    factorRarity: 0.05
+  - name: Mystic
+    color: {r: 0.9411765, g: 0, b: 0.91521317, a: 1}
+    factorPower: 1.5
+    factorRarity: 0.15
+  - name: Ancestral
+    color: {r: 0, g: 0.66896534, b: 1, a: 1}
+    factorPower: 1.2
+    factorRarity: 0.4
+  - name: Excellent
+    color: {r: 0, g: 1, b: 0.048275948, a: 1}
+    factorPower: 1
+    factorRarity: 1
 --- !u!114 &114787204419405536
 MonoBehaviour:
   m_ObjectHideFlags: 1

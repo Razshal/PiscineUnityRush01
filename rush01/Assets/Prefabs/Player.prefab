@@ -3734,7 +3734,7 @@ Animator:
   m_GameObject: {fileID: 1077493946710812}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 6a05499940f38404e9a586d0304429e8, type: 3}
-  m_Controller: {fileID: 9100000, guid: 81a2a5870eb854751a280efda3ed61bc, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4213b76998729447e90102d231568a31, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5489,7 +5489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyTarget: {fileID: 0}
-  autoPotion: {fileID: 0}
+  autoPotion: {fileID: 1707932182818942, guid: 8ea28397b82144a57afc8dd90b356bc3, type: 2}
   displayName: Maya
   life: 0
   maxLife: 0

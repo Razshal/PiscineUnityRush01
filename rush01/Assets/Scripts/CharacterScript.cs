@@ -119,6 +119,7 @@ public class CharacterScript : MonoBehaviour
                 playerScript.money += money;
                 if (Random.value < 0.1)
                     Instantiate(autoPotion, transform.position, transform.rotation);
+                LootSpawner.Instance.generateLoot(transform);
             }
         }
     }

@@ -56,7 +56,8 @@ public class PlayerScript : CharacterScript
 
     void ConsumableUse(Consumable item)
     {
-        //hp += item.regenHp ...
+        if (item.regenHp > 0)
+            ReceiveLife(item.regenHp);
     }
     //End Event Function
     

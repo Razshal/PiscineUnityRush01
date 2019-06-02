@@ -2,155 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c12a5c1-fcca-4fd0-9b4f-a33e603a9aaf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Potions/AutoPotion.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AutoPotion.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AutoPotion.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.rush01/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.rush01/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.rush01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.rush01/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/DepthOfField.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/DepthOfField.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Example Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Example Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Example Scene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Example Scene.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Example Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Example Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Example Scene/LightmapSnapshot.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Example Scene/LightmapSnapshot.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Example Scene/LightmapSnapshot.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Example Scene/LightmapSnapshot.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Materials.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Materials/Floor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Materials/Floor.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Materials/Floor.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Materials/Floor.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Materials/Glass Normal.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Materials/Glass Normal.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Materials/Glass Normal.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Materials/Glass Normal.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Materials/Glass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Materials/Glass.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Materials/Glass.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Materials/Glass.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Materials/JUG.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Materials/JUG.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Materials/JUG.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Materials/JUG.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Materials/Pot.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Materials/Pot.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Materials/Pot.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Materials/Pot.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Raw Mesh.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Raw Mesh.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Raw Mesh/Tube2.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Raw Mesh/Tube2.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Raw Mesh/Tube2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Raw Mesh/Tube2.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Scripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Scripts/CreatePrefabFromSelected.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Scripts/CreatePrefabFromSelected.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Other Assets/Scripts/CreatePrefabFromSelected.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Other Assets/Scripts/CreatePrefabFromSelected.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/10_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/10_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/10_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/10_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/11_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/11_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/11_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/11_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/12_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/12_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/12_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/12_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/13_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/13_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/13_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/13_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/14_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/14_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/14_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/14_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/15_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/15_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/15_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/15_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/16_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/16_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/16_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/16_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/17_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/17_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/17_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/17_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/18_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/18_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/18_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/18_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/19_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/19_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/19_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/19_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/1_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/1_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/1_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/1_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/20_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/20_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/20_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/20_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/21_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/21_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/21_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/21_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/22_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/22_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/22_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/22_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/23_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/23_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/23_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/23_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/24_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/24_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/24_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/24_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/25_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/25_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/25_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/25_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/2_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/2_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/2_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/2_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/3_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/3_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/3_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/3_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/4_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/4_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/4_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/4_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/5_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/5_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/5_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/5_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/6_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/6_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/6_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/6_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/7_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/7_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/7_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/7_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/8_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/8_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/8_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/8_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/9_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/9_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Empty/9_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Empty/9_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/1.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/10.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/10.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/10.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/10.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/11.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/11.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/11.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/11.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/12.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/12.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/12.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/12.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/13.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/13.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/13.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/13.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/14.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/14.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/14.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/14.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/15.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/15.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/15.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/15.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/16.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/16.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/16.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/16.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/17.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/17.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/17.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/17.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/18.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/18.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/18.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/18.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/19.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/19.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/19.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/19.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/20.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/20.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/20.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/20.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/21.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/21.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/21.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/21.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/22.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/22.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/22.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/22.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/23.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/23.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/23.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/23.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/24.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/24.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/24.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/24.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/25.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/25.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/25.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/25.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/3.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/3.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/4.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/4.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/5.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/5.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/6.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/6.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/6.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/7.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/7.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/7.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/8.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/8.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/8.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/8.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/9.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/9.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Prefabs/Filled/9.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Prefabs/Filled/9.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Polygon Potions Pack/Readme.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Low Polygon Potions Pack/Readme.txt.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/EnemySpawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/EnemySpawner.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Lambent_Female.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Lambent_Female.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Lambent_Male.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Lambent_Male.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wands/Stick.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Potions/AutoPotion.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Potions/Potion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Potions/Potion.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LootSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LootSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnerScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpellManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpellManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpellScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpellScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ItemPhysic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ItemPhysic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain/New Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain/New Terrain.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/models/Wands/Textures/UE_4/03/L_DefaultMaterial_Normal.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/models/Wands/Textures/UE_4/03/L_DefaultMaterial_Normal.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UiSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UiSlot.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,24 +31,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="31" />
+          <entry key="cs" value="34" />
           <entry key="shader" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="31" />
+          <entry key="C#" value="34" />
           <entry key="ShaderLab" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="8024" />
+          <entry key="cs" value="8213" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="8024" />
+          <entry key="C#" value="8213" />
         </counts>
       </usages-collector>
     </session>
@@ -234,58 +94,38 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="960">
-                  <caret line="77" column="12" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
+                <state relative-caret-position="870">
+                  <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
                   <folding>
-                    <marker date="1559481091000" expanded="false" signature="6:100" ph="..." />
-                    <marker date="1559481091000" expanded="true" signature="145:5365" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="750:905" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="934:1089" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="1147:1309" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="1350:1449" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="1490:1535" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="1586:1704" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="1752:2175" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="2105:2169" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="2200:2593" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="2359:2587" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="2643:3063" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="2717:3057" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="5002:5161" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="5248:5363" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/ItemPhysic.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-                  <folding>
-                    <marker date="1559481282000" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1559481282000" expanded="true" signature="119:396" ph="{...}" />
-                    <marker date="1559481282000" expanded="true" signature="227:394" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/ConvertItem.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="27" column="41" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="41" />
-                  <folding>
-                    <marker date="1559415306000" expanded="false" signature="6:100" ph="..." />
-                    <marker date="1559415306000" expanded="true" signature="142:1009" ph="{...}" />
-                    <marker date="1559415306000" expanded="true" signature="255:280" ph="{...}" />
-                    <marker date="1559415306000" expanded="true" signature="340:695" ph="{...}" />
-                    <marker date="1559415306000" expanded="true" signature="756:1007" ph="{...}" />
+                    <marker date="1559481449000" expanded="false" signature="6:100" ph="..." />
+                    <marker date="1559481449000" expanded="true" signature="145:5401" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="750:905" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="934:1089" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="1147:1309" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="1350:1449" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="1490:1571" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="1622:1740" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="1788:2211" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="2141:2205" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="2236:2629" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="2395:2623" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="2679:3099" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="2753:3093" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="3145:3273" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="3302:3362" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="3390:3449" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="3516:3566" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="3597:3648" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="3676:3731" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="3754:5197" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="3818:4986" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="4131:4299" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="4580:4746" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="4792:4976" ph="{...}" />
+                    <marker date="1559481449000" expanded="true" signature="5284:5399" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -294,15 +134,67 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterScript.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1440">
-                  <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+                <state relative-caret-position="1330">
+                  <caret line="165" column="39" selection-start-line="165" selection-start-column="39" selection-end-line="165" selection-end-column="39" />
                   <folding>
-                    <marker date="1559481091000" expanded="false" signature="6:100" ph="..." />
-                    <marker date="1559481091000" expanded="true" signature="146:5450" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="4817:5321" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="4817:5448" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="4981:5116" ph="{...}" />
-                    <marker date="1559481091000" expanded="true" signature="5133:5311" ph="{...}" />
+                    <marker date="1559481728000" expanded="false" signature="6:100" ph="..." />
+                    <marker date="1559481728000" expanded="true" signature="146:5512" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="1064:1135" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="1187:1505" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="1537:1654" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="1692:2574" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="1787:2568" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="1960:2085" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="2623:2835" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="2682:2829" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="2871:3305" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="2900:3299" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="2969:3289" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="3404:3837" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="3888:3952" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="3995:4392" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="4259:4386" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="4424:4731" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="4463:4725" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="4760:5510" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="4799:5383" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="5043:5178" ph="{...}" />
+                    <marker date="1559481728000" expanded="true" signature="5195:5373" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemyScript.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="405">
+                  <caret line="29" selection-start-line="29" selection-end-line="29" />
+                  <folding>
+                    <marker date="1559427216000" expanded="false" signature="6:78" ph="..." />
+                    <marker date="1559427216000" expanded="true" signature="122:947" ph="{...}" />
+                    <marker date="1559427216000" expanded="true" signature="177:496" ph="{...}" />
+                    <marker date="1559427216000" expanded="true" signature="525:578" ph="{...}" />
+                    <marker date="1559427216000" expanded="true" signature="607:659" ph="{...}" />
+                    <marker date="1559427216000" expanded="true" signature="688:734" ph="{...}" />
+                    <marker date="1559427216000" expanded="true" signature="780:887" ph="{...}" />
+                    <marker date="1559427216000" expanded="true" signature="910:945" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Assets/Scripts/ConvertItem.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+                  <folding>
+                    <marker date="1559415306000" expanded="false" signature="6:100" ph="..." />
+                    <marker date="1559415306000" expanded="true" signature="142:1009" ph="{...}" />
+                    <marker date="1559415306000" expanded="true" signature="255:280" ph="{...}" />
+                    <marker date="1559415306000" expanded="true" signature="340:695" ph="{...}" />
+                    <marker date="1559415306000" expanded="true" signature="756:1007" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -376,27 +268,24 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiSlot.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="78">
-                  <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+                <state relative-caret-position="1170">
+                  <caret line="84" selection-start-line="84" selection-end-line="84" />
                   <folding>
-                    <marker date="1559476600000" expanded="false" signature="6:212" ph="..." />
-                    <marker date="1559476600000" expanded="true" signature="285:4243" ph="{...}" />
-                    <marker date="1559476600000" expanded="true" signature="800:942" ph="{...}" />
-                    <marker date="1559476600000" expanded="true" signature="991:1353" ph="{...}" />
-                    <marker date="1559476600000" expanded="true" signature="1382:1475" ph="{...}" />
-                    <marker date="1559476600000" expanded="true" signature="1528:1727" ph="{...}" />
-                    <marker date="1559476600000" expanded="true" signature="1576:1718" ph="{...}" />
-                    <marker date="1559476600000" expanded="true" signature="1789:1849" ph="{...}" />
-                    <marker date="1559476600000" expanded="true" signature="1919:4241" ph="{...}" />
-                    <marker date="1559476600000" expanded="true" signature="2100:3715" ph="{...}" />
-                    <marker date="1559476600000" expanded="true" signature="2248:2965" ph="{...}" />
-                    <marker date="1559476600000" expanded="true" signature="2405:2942" ph="{...}" />
-                    <marker date="1559476600000" expanded="true" signature="2554:2853" ph="{...}" />
-                    <marker date="1559476600000" expanded="true" signature="3052:3699" ph="{...}" />
-                    <marker date="1559476600000" expanded="true" signature="3197:3676" ph="{...}" />
-                    <marker date="1559476600000" expanded="true" signature="3350:3587" ph="{...}" />
-                    <marker date="1559476600000" expanded="true" signature="3798:4232" ph="{...}" />
-                    <marker date="1559476600000" expanded="true" signature="3910:4126" ph="{...}" />
+                    <marker date="1559481626000" expanded="false" signature="6:212" ph="..." />
+                    <marker date="1559481626000" expanded="true" signature="285:3464" ph="{...}" />
+                    <marker date="1559481626000" expanded="true" signature="800:942" ph="{...}" />
+                    <marker date="1559481626000" expanded="true" signature="991:1353" ph="{...}" />
+                    <marker date="1559481626000" expanded="true" signature="1382:1475" ph="{...}" />
+                    <marker date="1559481626000" expanded="true" signature="1528:1727" ph="{...}" />
+                    <marker date="1559481626000" expanded="true" signature="1576:1718" ph="{...}" />
+                    <marker date="1559481626000" expanded="true" signature="1789:1849" ph="{...}" />
+                    <marker date="1559481626000" expanded="true" signature="1919:3462" ph="{...}" />
+                    <marker date="1559481626000" expanded="true" signature="2060:3095" ph="{...}" />
+                    <marker date="1559481626000" expanded="true" signature="2164:2612" ph="{...}" />
+                    <marker date="1559481626000" expanded="true" signature="2263:2589" ph="{...}" />
+                    <marker date="1559481626000" expanded="true" signature="2699:3079" ph="{...}" />
+                    <marker date="1559481626000" expanded="true" signature="2792:3056" ph="{...}" />
+                    <marker date="1559481626000" expanded="true" signature="3178:3453" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -416,9 +305,24 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Assets/Scripts/AutoPotion.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+                  <folding>
+                    <marker date="1559481091000" expanded="false" signature="6:78" ph="..." />
+                    <marker date="1559481091000" expanded="true" signature="119:452" ph="{...}" />
+                    <marker date="1559481091000" expanded="true" signature="199:450" ph="{...}" />
+                    <marker date="1559481091000" expanded="true" signature="256:444" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/ItemIcon.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="698">
+                <state relative-caret-position="502">
                   <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
                   <folding>
                     <marker date="1559474019000" expanded="false" signature="6:136" ph="..." />
@@ -457,7 +361,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/OutlineGrowEffect.cs">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="450">
@@ -507,18 +411,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/LootSpawner.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+                <state relative-caret-position="435">
+                  <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
                   <folding>
-                    <marker date="1559416150000" expanded="false" signature="6:127" ph="..." />
-                    <marker date="1559416150000" expanded="true" signature="165:278" ph="{...}" />
-                    <marker date="1559416150000" expanded="true" signature="246:276" ph="{...}" />
-                    <marker date="1559416150000" expanded="true" signature="320:560" ph="{...}" />
-                    <marker date="1559416150000" expanded="true" signature="417:558" ph="{...}" />
-                    <marker date="1559416150000" expanded="true" signature="449:555" ph="{...}" />
+                    <marker date="1559482558000" expanded="false" signature="6:127" ph="..." />
+                    <marker date="1559482558000" expanded="true" signature="165:278" ph="{...}" />
+                    <marker date="1559482558000" expanded="true" signature="246:276" ph="{...}" />
+                    <marker date="1559482558000" expanded="true" signature="320:832" ph="{...}" />
+                    <marker date="1559482558000" expanded="true" signature="429:454" ph="{...}" />
+                    <marker date="1559482558000" expanded="true" signature="530:830" ph="{...}" />
+                    <marker date="1559482558000" expanded="true" signature="562:827" ph="{...}" />
+                    <marker date="1559482558000" expanded="true" signature="626:823" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -547,7 +453,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>SetParent</find>
       <find>_startParent</find>
       <find>OpenStats</find>
       <find>itemIcon</find>
@@ -577,6 +482,7 @@
       <find>ConvertToItemPhysic</find>
       <find>setRarity</find>
       <find>weapon</find>
+      <find>regen</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -587,6 +493,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/AssetStore/AAA Projectiles/LWRP/LWRP_Blend_DistortTexture.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiSlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpellScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AssetStore/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/ScreenSpaceAmbientObscurance.shader" root0="FORCE_HIGHLIGHTING" />
@@ -599,6 +506,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/AssetStore/AAA Projectiles/Scripts/ProjectileMover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AssetStore/AAA Projectiles/Demo scene with projectiles/DemoShooting.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CharacterPannel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AutoPotion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Consumable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LootSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AssetStore/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/DepthOfFieldScatter.shader" root0="FORCE_HIGHLIGHTING" />
@@ -625,11 +533,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ItemPhysic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Consumable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ConvertItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LootSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ToolTips.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpellManager.cs" />
         <option value="$PROJECT_DIR$/Assets/SkillBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterScript.cs" />
         <option value="$PROJECT_DIR$/Assets/OutlineEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/OutlineGrowEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiHidable.cs" />
@@ -638,12 +544,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CharacterPannel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TestPlayerUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ItemIcon.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiSlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RarityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OutlineGrowEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ItemPhysic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiSlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LootSpawner.cs" />
       </list>
     </option>
   </component>
@@ -733,12 +641,12 @@
       <updated>1559393265335</updated>
       <workItem from="1559393268513" duration="18220000" />
       <workItem from="1559422137407" duration="7451000" />
-      <workItem from="1559468882169" duration="8151000" />
+      <workItem from="1559468882169" duration="9381000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33822000" />
+    <option name="totallyTimeSpent" value="35052000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -822,21 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
-          <folding>
-            <marker date="1559481091000" expanded="false" signature="6:100" ph="..." />
-            <marker date="1559481091000" expanded="true" signature="146:5450" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="4817:5321" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="4817:5448" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="4981:5116" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="5133:5311" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpellScript.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -870,21 +763,6 @@
             <marker date="1559471248000" expanded="false" signature="6:78" ph="..." />
             <marker date="1559471248000" expanded="true" signature="1917:1918" ph="/* ----------- Original collision script ... */" />
             <marker date="1559471248000" expanded="true" signature="1917:1920" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/LootSpawner.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <marker date="1559416150000" expanded="false" signature="6:127" ph="..." />
-            <marker date="1559416150000" expanded="true" signature="165:278" ph="{...}" />
-            <marker date="1559416150000" expanded="true" signature="246:276" ph="{...}" />
-            <marker date="1559416150000" expanded="true" signature="320:560" ph="{...}" />
-            <marker date="1559416150000" expanded="true" signature="417:558" ph="{...}" />
-            <marker date="1559416150000" expanded="true" signature="449:555" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -985,6 +863,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RarityManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <marker date="1559479300000" expanded="true" signature="6:146" ph="..." />
+            <marker date="1559479300000" expanded="true" signature="182:295" ph="{...}" />
+            <marker date="1559479300000" expanded="true" signature="339:811" ph="{...}" />
+            <marker date="1559479300000" expanded="true" signature="460:497" ph="{...}" />
+            <marker date="1559479300000" expanded="true" signature="553:809" ph="{...}" />
+            <marker date="1559479300000" expanded="true" signature="659:757" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapon.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <marker date="1559479948000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1559479948000" expanded="true" signature="115:527" ph="{...}" />
+            <marker date="1559479948000" expanded="true" signature="239:320" ph="{...}" />
+            <marker date="1559479948000" expanded="true" signature="345:417" ph="{...}" />
+            <marker date="1559479948000" expanded="true" signature="449:525" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/OutlineGrowEffect.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding>
+            <marker date="1559480729000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1559480729000" expanded="true" signature="126:1047" ph="{...}" />
+            <marker date="1559480729000" expanded="true" signature="445:603" ph="{...}" />
+            <marker date="1559480729000" expanded="true" signature="630:1045" ph="{...}" />
+            <marker date="1559480729000" expanded="true" signature="656:727" ph="{...}" />
+            <marker date="1559480729000" expanded="true" signature="800:944" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Consumable.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -996,9 +918,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ConvertItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+          <folding>
+            <marker date="1559415306000" expanded="false" signature="6:100" ph="..." />
+            <marker date="1559415306000" expanded="true" signature="142:1009" ph="{...}" />
+            <marker date="1559415306000" expanded="true" signature="255:280" ph="{...}" />
+            <marker date="1559415306000" expanded="true" signature="340:695" ph="{...}" />
+            <marker date="1559415306000" expanded="true" signature="756:1007" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/ItemPhysic.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <marker date="1559481282000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1559481282000" expanded="true" signature="119:396" ph="{...}" />
+            <marker date="1559481282000" expanded="true" signature="227:394" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AutoPotion.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <marker date="1559481091000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1559481091000" expanded="true" signature="119:452" ph="{...}" />
+            <marker date="1559481091000" expanded="true" signature="199:450" ph="{...}" />
+            <marker date="1559481091000" expanded="true" signature="256:444" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/ItemIcon.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
+        <state relative-caret-position="502">
           <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
           <folding>
             <marker date="1559474019000" expanded="false" signature="6:136" ph="..." />
@@ -1020,124 +981,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ConvertItem.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemyScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="41" />
+        <state relative-caret-position="405">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <marker date="1559415306000" expanded="false" signature="6:100" ph="..." />
-            <marker date="1559415306000" expanded="true" signature="142:1009" ph="{...}" />
-            <marker date="1559415306000" expanded="true" signature="255:280" ph="{...}" />
-            <marker date="1559415306000" expanded="true" signature="340:695" ph="{...}" />
-            <marker date="1559415306000" expanded="true" signature="756:1007" ph="{...}" />
+            <marker date="1559427216000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1559427216000" expanded="true" signature="122:947" ph="{...}" />
+            <marker date="1559427216000" expanded="true" signature="177:496" ph="{...}" />
+            <marker date="1559427216000" expanded="true" signature="525:578" ph="{...}" />
+            <marker date="1559427216000" expanded="true" signature="607:659" ph="{...}" />
+            <marker date="1559427216000" expanded="true" signature="688:734" ph="{...}" />
+            <marker date="1559427216000" expanded="true" signature="780:887" ph="{...}" />
+            <marker date="1559427216000" expanded="true" signature="910:945" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiSlot.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+        <state relative-caret-position="1170">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
           <folding>
-            <marker date="1559476600000" expanded="false" signature="6:212" ph="..." />
-            <marker date="1559476600000" expanded="true" signature="285:4243" ph="{...}" />
-            <marker date="1559476600000" expanded="true" signature="800:942" ph="{...}" />
-            <marker date="1559476600000" expanded="true" signature="991:1353" ph="{...}" />
-            <marker date="1559476600000" expanded="true" signature="1382:1475" ph="{...}" />
-            <marker date="1559476600000" expanded="true" signature="1528:1727" ph="{...}" />
-            <marker date="1559476600000" expanded="true" signature="1576:1718" ph="{...}" />
-            <marker date="1559476600000" expanded="true" signature="1789:1849" ph="{...}" />
-            <marker date="1559476600000" expanded="true" signature="1919:4241" ph="{...}" />
-            <marker date="1559476600000" expanded="true" signature="2100:3715" ph="{...}" />
-            <marker date="1559476600000" expanded="true" signature="2248:2965" ph="{...}" />
-            <marker date="1559476600000" expanded="true" signature="2405:2942" ph="{...}" />
-            <marker date="1559476600000" expanded="true" signature="2554:2853" ph="{...}" />
-            <marker date="1559476600000" expanded="true" signature="3052:3699" ph="{...}" />
-            <marker date="1559476600000" expanded="true" signature="3197:3676" ph="{...}" />
-            <marker date="1559476600000" expanded="true" signature="3350:3587" ph="{...}" />
-            <marker date="1559476600000" expanded="true" signature="3798:4232" ph="{...}" />
-            <marker date="1559476600000" expanded="true" signature="3910:4126" ph="{...}" />
+            <marker date="1559481626000" expanded="false" signature="6:212" ph="..." />
+            <marker date="1559481626000" expanded="true" signature="285:3464" ph="{...}" />
+            <marker date="1559481626000" expanded="true" signature="800:942" ph="{...}" />
+            <marker date="1559481626000" expanded="true" signature="991:1353" ph="{...}" />
+            <marker date="1559481626000" expanded="true" signature="1382:1475" ph="{...}" />
+            <marker date="1559481626000" expanded="true" signature="1528:1727" ph="{...}" />
+            <marker date="1559481626000" expanded="true" signature="1576:1718" ph="{...}" />
+            <marker date="1559481626000" expanded="true" signature="1789:1849" ph="{...}" />
+            <marker date="1559481626000" expanded="true" signature="1919:3462" ph="{...}" />
+            <marker date="1559481626000" expanded="true" signature="2060:3095" ph="{...}" />
+            <marker date="1559481626000" expanded="true" signature="2164:2612" ph="{...}" />
+            <marker date="1559481626000" expanded="true" signature="2263:2589" ph="{...}" />
+            <marker date="1559481626000" expanded="true" signature="2699:3079" ph="{...}" />
+            <marker date="1559481626000" expanded="true" signature="2792:3056" ph="{...}" />
+            <marker date="1559481626000" expanded="true" signature="3178:3453" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RarityManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="1330">
+          <caret line="165" column="39" selection-start-line="165" selection-start-column="39" selection-end-line="165" selection-end-column="39" />
           <folding>
-            <marker date="1559479300000" expanded="true" signature="6:146" ph="..." />
-            <marker date="1559479300000" expanded="true" signature="182:295" ph="{...}" />
-            <marker date="1559479300000" expanded="true" signature="339:811" ph="{...}" />
-            <marker date="1559479300000" expanded="true" signature="460:497" ph="{...}" />
-            <marker date="1559479300000" expanded="true" signature="553:809" ph="{...}" />
-            <marker date="1559479300000" expanded="true" signature="659:757" ph="{...}" />
+            <marker date="1559481728000" expanded="false" signature="6:100" ph="..." />
+            <marker date="1559481728000" expanded="true" signature="146:5512" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="1064:1135" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="1187:1505" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="1537:1654" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="1692:2574" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="1787:2568" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="1960:2085" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="2623:2835" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="2682:2829" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="2871:3305" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="2900:3299" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="2969:3289" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="3404:3837" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="3888:3952" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="3995:4392" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="4259:4386" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="4424:4731" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="4463:4725" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="4760:5510" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="4799:5383" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="5043:5178" ph="{...}" />
+            <marker date="1559481728000" expanded="true" signature="5195:5373" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="77" column="12" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
+        <state relative-caret-position="870">
+          <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
           <folding>
-            <marker date="1559481091000" expanded="false" signature="6:100" ph="..." />
-            <marker date="1559481091000" expanded="true" signature="145:5365" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="750:905" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="934:1089" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="1147:1309" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="1350:1449" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="1490:1535" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="1586:1704" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="1752:2175" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="2105:2169" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="2200:2593" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="2359:2587" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="2643:3063" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="2717:3057" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="5002:5161" ph="{...}" />
-            <marker date="1559481091000" expanded="true" signature="5248:5363" ph="{...}" />
+            <marker date="1559481449000" expanded="false" signature="6:100" ph="..." />
+            <marker date="1559481449000" expanded="true" signature="145:5401" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="750:905" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="934:1089" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="1147:1309" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="1350:1449" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="1490:1571" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="1622:1740" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="1788:2211" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="2141:2205" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="2236:2629" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="2395:2623" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="2679:3099" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="2753:3093" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="3145:3273" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="3302:3362" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="3390:3449" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="3516:3566" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="3597:3648" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="3676:3731" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="3754:5197" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="3818:4986" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="4131:4299" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="4580:4746" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="4792:4976" ph="{...}" />
+            <marker date="1559481449000" expanded="true" signature="5284:5399" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapon.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/LootSpawner.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="435">
+          <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
           <folding>
-            <marker date="1559479948000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1559479948000" expanded="true" signature="115:527" ph="{...}" />
-            <marker date="1559479948000" expanded="true" signature="239:320" ph="{...}" />
-            <marker date="1559479948000" expanded="true" signature="345:417" ph="{...}" />
-            <marker date="1559479948000" expanded="true" signature="449:525" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/ItemPhysic.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding>
-            <marker date="1559481282000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1559481282000" expanded="true" signature="119:396" ph="{...}" />
-            <marker date="1559481282000" expanded="true" signature="227:394" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/OutlineGrowEffect.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-          <folding>
-            <marker date="1559480729000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1559480729000" expanded="true" signature="126:1047" ph="{...}" />
-            <marker date="1559480729000" expanded="true" signature="445:603" ph="{...}" />
-            <marker date="1559480729000" expanded="true" signature="630:1045" ph="{...}" />
-            <marker date="1559480729000" expanded="true" signature="656:727" ph="{...}" />
-            <marker date="1559480729000" expanded="true" signature="800:944" ph="{...}" />
+            <marker date="1559482558000" expanded="false" signature="6:127" ph="..." />
+            <marker date="1559482558000" expanded="true" signature="165:278" ph="{...}" />
+            <marker date="1559482558000" expanded="true" signature="246:276" ph="{...}" />
+            <marker date="1559482558000" expanded="true" signature="320:832" ph="{...}" />
+            <marker date="1559482558000" expanded="true" signature="429:454" ph="{...}" />
+            <marker date="1559482558000" expanded="true" signature="530:830" ph="{...}" />
+            <marker date="1559482558000" expanded="true" signature="562:827" ph="{...}" />
+            <marker date="1559482558000" expanded="true" signature="626:823" ph="{...}" />
           </folding>
         </state>
       </provider>

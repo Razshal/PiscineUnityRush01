@@ -19,14 +19,23 @@ public class LootRate
 
 public class LootSpawner : MonoBehaviour
 {
+	public static LootSpawner Instance { get; private set; }
 	public LootRate[] loots;
 
-	void generateLoot(Transform inPlaceTransform, float factor = 1.0f)
+	private void Awake()
+	{
+		Instance = this;
+	}
+
+	public void generateLoot(Transform inPlaceTransform, float factor = 1.0f)
 	{
 		foreach (var lot in loots)
 		{
-			if (Random.Range(0.0f, 1.0f) < lot.rate * factor)
-				Instantiate(lot.item, inPlaceTransform);
+			if (Random.Range(0.0f, 1.0f) < lot.rate * factor * 5.0f)
+			{
+				GameObject obj = Instantiate(lot.item, inPlaceTransform.position, Quaternion.identity);
+				obj.GetComponent<Rigidbody>().AddForce(Random.insideUnitSphere * 5.0f, ForceMode.Impulse);
+			}
 		}
 	}
 }

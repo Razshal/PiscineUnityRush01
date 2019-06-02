@@ -57,48 +57,31 @@ public class UiSlot : MonoBehaviour, IDropHandler, IPointerClickHandler
        {
               if (!ItemIcon)
                      return;
-              Debug.Log("Right Click");
               if (ItemIcon.GetComponent<ItemIcon>().type == Type.eWeapon)
               {
-                     Debug.Log("IsWeapon");
                      if (transform.parent.parent != CharacterPannel.Instance.transform)
                      {
-                            Debug.Log("CharacterPannel");
                             if (CharacterPannel.Instance.addItem(ItemIcon))
                             {
-                                   Debug.Log("Equiped");
                                    if (OnWeaponEquip != null)
-                                   {
-                                          Debug.Log("Call OnWeqponEquipEvent");
                                           OnWeaponEquip(ItemIcon.itemToEquip, ItemIcon.transform.GetChild(0).GetComponent<ItemPhysic>().rarity);
-                                   }
                                    ItemIcon = null;       
                             }
                      }
                      else if (transform.parent.parent != Inventory.Instance.transform)
                      {
-                            Debug.Log("Inventory");
                             if (Inventory.Instance.addItem(ItemIcon))
                             {
-                                   Debug.Log("UnEquiped");
                                    if (OnWeaponUnEquip != null)
-                                   {
-                                          Debug.Log("Call OnWeqponUnEquipEvent");
                                           OnWeaponUnEquip(ItemIcon.itemToEquip);
-                                   }
                                    ItemIcon = null;       
                             }
                      }
               }
               else if (ItemIcon.GetComponent<ItemIcon>().type == Type.eConsumable)
               {
-                     Debug.Log("Consumable");
                      if (OnConsumableUse != null)
-                     {
-                            Debug.Log("Call OnWeqponEquipEvent");
                             OnConsumableUse(ItemIcon.transform.GetChild(0).GetComponent<Consumable>());
-                     }
-
                      Destroy(ItemIcon.gameObject);
                      ItemIcon = null;
               }
