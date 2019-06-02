@@ -174,7 +174,7 @@ public class CharacterScript : MonoBehaviour
         if (state != State.DEAD)
         {
             // Sets states for animations and attack
-            if (navMeshAgent.hasPath && !isInContact)
+            if (!isInContact)
                 state = State.RUN;
             else if (enemyTarget && isInContact && enemyTarget.GetComponent<CharacterScript>().state != State.DEAD)
             {
