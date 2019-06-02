@@ -15,6 +15,21 @@ public class Weapon : MonoBehaviour
 		GetComponent<Outline>().OutlineColor = rarity.color;
 	}
 
+	public int getMaxDamage(float factor = 1.0f)
+	{
+		return (int) (damage * factor);
+	}
+	
+	public int getMaxDamage()
+	{
+		return (int) (damage * rarity.factorPower);
+	}
+	
+	public int getMinDamage()
+	{
+		return (damage);
+	}
+	
 	public int getDamage()
 	{
 		return (int) Random.Range(damage, damage * rarity.factorPower);

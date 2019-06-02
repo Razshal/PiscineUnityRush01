@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class ItemPhysic : MonoBehaviour
 {
-	public Sprite itemSprite;
-	public GameObject objectPhysic;
 	public Rarity rarity;
+	public string displayName;
 
 	private void Start()
 	{

@@ -14,7 +14,7 @@ public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 	public GameObject itemToEquip;
 	public Type type = Type.eAll;
 	public string info;
-	public string name;
+	public string title;
 
 	
 	public static ItemIcon ItemIconDrag;
@@ -70,15 +70,42 @@ public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
 	public void OnPointerEnter(PointerEventData eventData)
 	{
+		ItemPhysic itemPhysic = transform.GetChild(0).GetComponent<ItemPhysic>();
 		if (type == Type.eSkill)
 		{
 			ProjectileMover spell = SpellManager.Instance.getSpell(name).GetComponent<ProjectileMover>();
 			if (spell != null)
 			{
+				title = spell.displayName;
+				ToolTips.Instance.setTitleColor();
 				info = "Level:" + spell.spellLevel.ToString() + "\nDamage:" + spell.damages.ToString() + "\n CoolDown:" + spell.SpellCoolDown.ToString();
 			}
 		}
-		ToolTips.Instance.setToolTips(name, info, transform.position);
+
+		if (type == Type.eWeapon)
+		{
+			Rarity rarity = itemPhysic.rarity;
+			Weapon weapon = itemToEquip.GetComponent<Weapon>();
+			 
+			if (itemPhysic != null && rarity != null)
+			{
+				title = itemPhysic.displayName;
+				ToolTips.Instance.setTitleColor(rarity.color);
+				info = rarity.displayName + "\nDamage: " + weapon.getMinDamage() + "-" + weapon.getMaxDamage(rarity.factorPower);
+				info += "\nAttackSpeed :";
+			}
+		}
+
+		if (type == Type.eConsumable)
+		{
+			Consumable consumable = itemPhysic.GetComponent<Consumable>();
+			title = itemPhysic.displayName;
+			info = "";
+			if (consumable.regenHp >= 0)
+				info += "Regeneration HP: " + consumable.regenHp.ToString();
+		}
+
+		ToolTips.Instance.setToolTips(title, info, transform.position);
 	}
 
 	public void OnPointerExit(PointerEventData eventData)

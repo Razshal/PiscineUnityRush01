@@ -192,7 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
+  outlineWidth: 5.32
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -207,13 +207,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fcb3e3f8ca2349dcb2c9f52cb807bcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  objectPhysic: {fileID: 1615546242170994}
   rarity:
-    name: 
+    displayName: 
     color: {r: 0, g: 0, b: 0, a: 0}
     factorPower: 0
     factorRarity: 0
+  displayName: Doux
 --- !u!114 &114981464630476360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -229,7 +228,7 @@ MonoBehaviour:
     type: 2}
   type: 1
   info: 
-  name: 
+  title: Doux
 --- !u!222 &222597664429495536
 CanvasRenderer:
   m_ObjectHideFlags: 1

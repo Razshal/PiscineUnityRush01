@@ -219,7 +219,7 @@ MonoBehaviour:
   itemToEquip: {fileID: 0}
   type: 3
   info: 
-  name: 
+  title: 
 --- !u!114 &114447185469948392
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -244,13 +244,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fcb3e3f8ca2349dcb2c9f52cb807bcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  objectPhysic: {fileID: 1891389806694306}
   rarity:
-    name: 
+    displayName: 
     color: {r: 0, g: 0, b: 0, a: 0}
     factorPower: 0
     factorRarity: 0
+  displayName: Potion de vie
 --- !u!114 &114775338352571292
 MonoBehaviour:
   m_ObjectHideFlags: 1

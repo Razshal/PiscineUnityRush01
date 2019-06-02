@@ -256,7 +256,6 @@
         <e p="OutlineGrowEffect.cs" t="Include" />
         <e p="PlayerScript.cs" t="Include" />
         <e p="RarityManager.cs" t="Include" />
-        <e p="SkillButtonScript.cs" t="Include" />
         <e p="SpawnerScript.cs" t="Include" />
         <e p="SpellManager.cs" t="Include" />
         <e p="SpellScript.cs" t="Include" />
