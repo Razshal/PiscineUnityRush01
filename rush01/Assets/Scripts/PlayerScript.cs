@@ -204,7 +204,10 @@ public class PlayerScript : CharacterScript
     private void LaunchDirectSpell(GameObject spell)
     {
         SpellScript launchedSpell = Instantiate(spell, transform.position, transform.rotation).GetComponent<SpellScript>();
-        launchedSpell.target = enemyTarget;
+        if (launchedSpell.isHeal)
+            launchedSpell.target = gameObject;
+        else
+            launchedSpell.target = enemyTarget;
         launchedSpell.spellLevel = spellManager.GetSpellLevel(spell.GetComponent<SpellScript>().displayName);
         launchedSpell.Start();
     }
@@ -238,7 +241,7 @@ public class PlayerScript : CharacterScript
     public void LaunchSpell(GameObject spell)
     {
         SpellScript spellScript = spell.GetComponent<SpellScript>();
-        if (((spellScript.isDirect && enemyTarget) || spellScript.isZone)
+        if (((spellScript.isDirect && (enemyTarget || spellScript.isHeal)) || spellScript.isZone)
             && spellManager.GetSpellLevel(spellScript.displayName) > 0
             && spellManager.CanLaunchSpell(spellScript.displayName)) 
         {
