@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4624330745462918}
   - component: {fileID: 114787204419405536}
   - component: {fileID: 114150372071422142}
+  - component: {fileID: 114423594410635964}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -52,8 +53,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48a8b37aeda24d3ab6ea3a8900d8848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpellKeys: []
-  SpellValues: []
+  SpellKeys:
+  - fire
+  SpellValues:
+  - {fileID: 1124310126471994, guid: 7dbae8c8060694410b798e76aca7382e, type: 2}
+--- !u!114 &114423594410635964
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1474347412408806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfef48e2645f1415baea0823bdd4bc01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rarities:
+  - name: Legendary
+    color: {r: 1, g: 1, b: 0, a: 1}
+    factorPower: 2
+    factorRarity: 0.02
+  - name: 0.04
+    color: {r: 0, g: 0, b: 0, a: 0}
+    factorPower: 0
+    factorRarity: 0
+  - name: 
+    color: {r: 0, g: 0, b: 0, a: 0}
+    factorPower: 0
+    factorRarity: 0
+  - name: 
+    color: {r: 0, g: 0, b: 0, a: 0}
+    factorPower: 0
+    factorRarity: 0
 --- !u!114 &114787204419405536
 MonoBehaviour:
   m_ObjectHideFlags: 1
