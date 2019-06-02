@@ -90,7 +90,7 @@ public class ItemIcon : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
 			ProjectileMover spell = SpellManager.Instance.getSpell(name).GetComponent<ProjectileMover>();
 			if (spell != null)
 			{
-				info = "Level:" + spell.spellLevel.ToString() + "\nDamage:" + spell.damages.ToString() + "\n CoolDown:" + spell.SpellCoolDown.ToString();
+				info = "Level:" + spell.spellLevel.ToString() + "\nDamage:" + spell.damages.ToString() + "\n CoolDown:" + spell.spellCoolDown.ToString();
 			}
 		}
 		ToolTips.Instance.setToolTips(name, info, transform.position);

@@ -144,6 +144,14 @@ public class CharacterScript : MonoBehaviour
         CalculateIfDead();
     }
 
+    public void ReceiveLife(int healAmmount)
+    {
+        if (life + healAmmount > maxLife)
+            life = maxLife;
+        else
+            life += healAmmount;
+    }
+
     private IEnumerator DeadDisapearing()
     {
         deathCoroutine = true;

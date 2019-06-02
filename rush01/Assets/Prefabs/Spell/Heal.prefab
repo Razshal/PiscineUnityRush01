@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 135498706016594804}
   - component: {fileID: 82247712154339540}
   m_Layer: 0
-  m_Name: IceRay (1)
+  m_Name: Heal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -225,6 +225,7 @@ MonoBehaviour:
   isZone: 0
   isPersonal: 1
   isDirect: 0
+  isHeal: 0
   damages: 10
   SpellCoolDown: 1
   lifeTime: 10
