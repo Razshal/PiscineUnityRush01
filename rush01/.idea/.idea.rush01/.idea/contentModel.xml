@@ -230,6 +230,18 @@
         </e>
         <e p="Readme.txt" t="Include" />
       </e>
+      <e p="Assets/QuickOutline" t="Include">
+        <e p="Readme.txt" t="Include" />
+        <e p="Resources" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="OutlineFill.shader" t="Include" />
+            <e p="OutlineMask.shader" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Outline.cs" t="Include" />
+        </e>
+      </e>
       <e p="Assets/Scripts" t="Include">
         <e p="CameraScript.cs" t="Include" />
         <e p="CharacterScript.cs" t="Include" />
@@ -238,7 +250,9 @@
         <e p="EnemyScript.cs" t="Include" />
         <e p="LootSpawner.cs" t="Include" />
         <e p="MainUiScript.cs" t="Include" />
+        <e p="OutlineGrowEffect.cs" t="Include" />
         <e p="PlayerScript.cs" t="Include" />
+        <e p="RarityManager.cs" t="Include" />
         <e p="SpawnerScript.cs" t="Include" />
         <e p="SpellManager.cs" t="Include" />
         <e p="SpellScript.cs" t="Include" />

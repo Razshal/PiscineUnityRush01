@@ -43,6 +43,8 @@ GameObject:
   - component: {fileID: 54091804890302038}
   - component: {fileID: 64537123716216946}
   - component: {fileID: 114679086251551388}
+  - component: {fileID: 114483605247890454}
+  - component: {fileID: 114140049074022120}
   m_Layer: 9
   m_Name: Wand
   m_TagString: Untagged
@@ -161,6 +163,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114140049074022120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1896615553607456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b1ae834129d42aab9f28548178acc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  durationTransition: 2
 --- !u!114 &114239949256231308
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -177,6 +191,23 @@ MonoBehaviour:
   type: 1
   info: 
   name: 
+--- !u!114 &114483605247890454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1896615553607456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.8455882, g: 0.07461075, b: 0.07461075, a: 1}
+  outlineWidth: 5.39
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!114 &114679086251551388
 MonoBehaviour:
   m_ObjectHideFlags: 1
