@@ -199,6 +199,7 @@ public class PlayerScript : CharacterScript
     public void LaunchSpell(GameObject spell)
     {
         SpellScript launchedSpell = Instantiate(spell, transform.position, transform.rotation).GetComponent<SpellScript>();
+        launchedSpell.target = enemyTarget;
 
     }
 
