@@ -15,7 +15,7 @@ public class SpellManager : MonoBehaviour
         foreach (GameObject spell in spellValues)
             _spellDictionary.Add(spell.GetComponent<SpellScript>().displayName, spell);
         foreach (GameObject spell in spellValues)
-            _spellLevelDictionary.Add(spell.GetComponent<SpellScript>().displayName, 1);
+            _spellLevelDictionary.Add(spell.GetComponent<SpellScript>().displayName, 0);
     }
 
     public GameObject getSpell(string name)

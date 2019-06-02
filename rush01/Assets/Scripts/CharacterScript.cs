@@ -7,8 +7,8 @@ public class CharacterScript : MonoBehaviour
 {
     protected Animator animator;
     protected NavMeshAgent navMeshAgent;
+	protected PlayerScript playerScript;
     public GameObject enemyTarget;
-    protected PlayerScript playerScript;
     public GameObject autoPotion;
 
     public string displayName = "Zombie";

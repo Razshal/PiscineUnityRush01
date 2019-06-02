@@ -10,6 +10,7 @@ public class PlayerScript : CharacterScript
     public UiHidable inventory;
     public UiHidable characterSystem;
     private GameObject _weapon;
+    private SpellManager spellManager;
     
     private RaycastHit clickHit;
     private Camera camera;
@@ -67,6 +68,7 @@ public class PlayerScript : CharacterScript
         camera = Camera.main;
         displayName = "Maya";
         experience = 0;
+        spellManager = GameObject.Find("GameManager").GetComponent<SpellManager>();
     }
 
     private void OnTriggerStay(Collider other)
@@ -197,11 +199,20 @@ public class PlayerScript : CharacterScript
         }
     }
 
-    public void LaunchSpell(GameObject spell)
+    private void LaunchDirectSpell(GameObject spell)
     {
         SpellScript launchedSpell = Instantiate(spell, transform.position, transform.rotation).GetComponent<SpellScript>();
         launchedSpell.target = enemyTarget;
+        launchedSpell.spellLevel = spellManager.GetSpellLevel(launchedSpell.name);
+        launchedSpell.Start();
+    }
 
+    public void LaunchSpell(GameObject spell)
+    {
+        if (spell.GetComponent<SpellScript>().isDirect && enemyTarget)
+        {
+            LaunchDirectSpell(spell);
+        }
     }
 
     //ANIMATION EVENT || TEST
