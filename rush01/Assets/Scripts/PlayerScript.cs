@@ -67,6 +67,11 @@ public class PlayerScript : CharacterScript
     }
     //End Event Function
 
+    private void Awake()
+    {
+        LootSpawner.Instance.generateLoot(transform, 10.0f);
+    }
+
     new void Start()
     {
         base.Start();
@@ -74,6 +79,7 @@ public class PlayerScript : CharacterScript
         displayName = "Maya";
         experience = 0;
         spellManager = GameObject.Find("GameManager").GetComponent<SpellManager>();
+        
     }
 
     private void OnTriggerStay(Collider other)
@@ -231,7 +237,7 @@ public class PlayerScript : CharacterScript
         if (Physics.Raycast(ray, out hit, 1000))
         {
             SpellScript launchedSpell = Instantiate(spell, transform.position, transform.rotation).GetComponent<SpellScript>();
-            launchedSpell.transform.position = hit.point;
+            launchedSpell.transform.position = hit.point + Vector3.up;
             launchedSpell.spellLevel = spellManager.GetSpellLevel(spell.GetComponent<SpellScript>().displayName);
             launchedSpell.Start();
         }

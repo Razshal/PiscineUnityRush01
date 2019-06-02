@@ -31,10 +31,11 @@ public class LootSpawner : MonoBehaviour
 	{
 		foreach (var lot in loots)
 		{
-			if (Random.Range(0.0f, 1.0f) < lot.rate * factor * 5.0f)
+			if (Random.Range(0.0f, 1.0f) < lot.rate * factor * 5.5f)
 			{
 				GameObject obj = Instantiate(lot.item, inPlaceTransform.position, Quaternion.identity);
 				obj.GetComponent<Rigidbody>().AddForce(Random.insideUnitSphere * 5.0f, ForceMode.Impulse);
+				obj.transform.position += Random.insideUnitSphere * 2.0f;
 			}
 		}
 	}
