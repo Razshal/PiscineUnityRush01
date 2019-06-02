@@ -33,14 +33,15 @@ public class SpellScript : MonoBehaviour
 
     protected void OnTriggerStay(Collider other)
     {
-        if (isHeal)
-            target.GetComponent<PlayerScript>().ReceiveLife(damages);
         if (!enemies.Contains(other.gameObject))
             enemies.Add(other.gameObject);
         if (canDealDamages && isDirect && target && other.gameObject == target)
         {
             Debug.Log("Do Damage");
-            target.GetComponent<CharacterScript>().ReceiveDirectDamages(damages);
+            if (isHeal)
+                target.GetComponent<CharacterScript>().ReceiveLife(damages);
+            else
+                target.GetComponent<CharacterScript>().ReceiveDirectDamages(damages);
             canDealDamages = false;
             GetComponent<AudioSource>().Play();
             Destroy(gameObject, lifeTime);
@@ -56,7 +57,7 @@ public class SpellScript : MonoBehaviour
                         enemy.GetComponent<CharacterScript>().ReceiveDirectDamages(damages);
                 }
                     
-                StartCoroutine(ZoneCoroutine());    
+                StartCoroutine(ZoneCoroutine());
             }
         }
             

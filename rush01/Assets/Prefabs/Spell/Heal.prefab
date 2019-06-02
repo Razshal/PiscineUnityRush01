@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 54275250679651832}
   - component: {fileID: 135498706016594804}
   - component: {fileID: 82247712154339540}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Heal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4683462955272746}
   - component: {fileID: 198240856506924736}
   - component: {fileID: 199698086857257608}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: SubRombs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1453626394136632}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 137.9843, y: 100, z: 106.23442}
+  m_LocalPosition: {x: 136.68166, y: 103.65, z: 98.09461}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4683462955272746}
@@ -223,21 +223,22 @@ MonoBehaviour:
   startEntity: {fileID: 0}
   spellLevel: 1
   isZone: 0
-  isPersonal: 1
-  isDirect: 0
-  isHeal: 0
-  damages: 10
-  SpellCoolDown: 1
+  isPersonal: 0
+  isDirect: 1
+  isHeal: 1
+  minLevel: 1
+  damages: 20
+  spellCoolDown: 10
   lifeTime: 10
   zoneDamagesCooldown: 1
   speed: 0.2
-  displayName: IceRay
-  description: An ice ray that goes straight to the enemy
+  displayName: Heal
+  description: Restores life
   enemies: []
   hitOffset: 0.1
   UseFirePointRotation: 0
-  hit: {fileID: 1231636063597364, guid: 3aa0fab185f378240b831342bde74b26, type: 2}
-  flash: {fileID: 1059172723860074, guid: 058c6c6f7bee2fc45a91fbdb528a9035, type: 2}
+  hit: {fileID: 1998750652454270, guid: 8a1ac1dbe39224143972fa1a908b0abf, type: 2}
+  flash: {fileID: 1998750652454270, guid: 8a1ac1dbe39224143972fa1a908b0abf, type: 2}
 --- !u!135 &135498706016594804
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -3761,7 +3762,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 0.33103448, b: 0, a: 1}
-      maxColor: {r: 0, g: 0.37931037, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

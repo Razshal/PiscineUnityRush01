@@ -439,7 +439,7 @@ MonoBehaviour:
   minLevel: 1
   damages: 2
   spellCoolDown: 10
-  lifeTime: 2
+  lifeTime: 3
   zoneDamagesCooldown: 0.3
   speed: 0
   displayName: Aoe
@@ -467,7 +467,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!198 &198041117593019986
 ParticleSystem:
