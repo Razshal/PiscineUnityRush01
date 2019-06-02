@@ -238,7 +238,7 @@ public class PlayerScript : CharacterScript
     public void LaunchSpell(GameObject spell)
     {
         SpellScript spellScript = spell.GetComponent<SpellScript>();
-        if (((spellScript.isDirect && enemyTarget) || (spellScript.isZone))
+        if (((spellScript.isDirect && enemyTarget) || spellScript.isZone)
             && spellManager.GetSpellLevel(spellScript.displayName) > 0
             && spellManager.CanLaunchSpell(spellScript.displayName)) 
         {
