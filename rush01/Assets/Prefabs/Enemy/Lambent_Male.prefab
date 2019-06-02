@@ -880,7 +880,7 @@ GameObject:
   - component: {fileID: 135404427956844362}
   - component: {fileID: 195963021168918686}
   - component: {fileID: 114485144052117746}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lambent_Male
   m_TagString: Enemy
   m_Icon: {fileID: 0}

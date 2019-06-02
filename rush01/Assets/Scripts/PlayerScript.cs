@@ -191,9 +191,13 @@ public class PlayerScript : CharacterScript
         else
             deathText.SetActive(true);
         if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
             LaunchSpell(SkillBar.Instance.getSpell(0));
-        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+            LaunchSpell(SkillBar.Instance.getSpell(1));
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+            LaunchSpell(SkillBar.Instance.getSpell(2));
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+            LaunchSpell(SkillBar.Instance.getSpell(3));
     }
 
     private void LaunchDirectSpell(GameObject spell)

@@ -18,19 +18,24 @@ public class SpellManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        Debug.Log("PLSLSS");
         foreach (GameObject spell in spellValues)
+        {
+            
+            Debug.Log(spell.GetComponent<SpellScript>().displayName);
             _spellDictionary.Add(spell.GetComponent<SpellScript>().displayName, spell);
+        }
         foreach (GameObject spell in spellValues)
             _spellLevelDictionary.Add(spell.GetComponent<SpellScript>().displayName, 0);
         foreach (GameObject spell in spellValues)
             _spellCoolDownDictionary.Add(spell.GetComponent<SpellScript>().displayName, spell.GetComponent<SpellScript>().spellCoolDown);
     }
 
-    public GameObject getSpell(string name)
+    public GameObject getSpell(string t)
     {
-        Debug.Log("getSpell | MAnager  = " + name);
-        if (_spellDictionary.ContainsKey(name))
-            return _spellDictionary[name];
+        Debug.Log("getSpell | MAnager  = " + t);
+        if (_spellDictionary.ContainsKey(t))
+            return _spellDictionary[t];
         return null;
     }
 
