@@ -270,6 +270,7 @@
           <e p="UiHidable.cs" t="Include" />
           <e p="UiSlot.cs" t="Include" />
         </e>
+        <e p="Weapon.cs" t="Include" />
       </e>
       <e p="Assets/SpellBookPreface" t="Include">
         <e p="Readme.txt" t="Include" />

@@ -40,10 +40,11 @@ public class PlayerScript : CharacterScript
         UiSlot.OnConsumableUse -= ConsumableUse;
     }
     
-    void EquipWeapon(GameObject item)
+    void EquipWeapon(GameObject item, Rarity rarity)
     {
         Debug.Log("EquipWeapon");
         _weapon = Instantiate(item, rightHand.transform);
+        _weapon.GetComponent<Weapon>().setRarity(rarity);
     }
 
     void UnEquipWeapon(GameObject item)
