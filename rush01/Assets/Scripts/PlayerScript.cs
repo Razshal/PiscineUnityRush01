@@ -224,29 +224,34 @@ public class PlayerScript : CharacterScript
         }
     }
     
-//    private void LaunchSelectZoneSpell(GameObject spell, Vector3 position)
-//    {
-//        
-//        
-//            SpellScript launchedSpell = Instantiate(spell, transform.position, transform.rotation).GetComponent<SpellScript>();
-//            launchedSpell.target = position;
-//            launchedSpell.spellLevel = spellManager.GetSpellLevel(spell.GetComponent<SpellScript>().displayName);
-//            launchedSpell.Start();
-//            
-//    }
+    private void LaunchSelectZoneSpell(GameObject spell)
+    {
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit, 1000))
+        {
+            SpellScript launchedSpell = Instantiate(spell, transform.position, transform.rotation).GetComponent<SpellScript>();
+            launchedSpell.transform.position = hit.point;
+            launchedSpell.spellLevel = spellManager.GetSpellLevel(spell.GetComponent<SpellScript>().displayName);
+            launchedSpell.Start();
+        }
+    }
 
     public void LaunchSpell(GameObject spell)
     {
         SpellScript spellScript = spell.GetComponent<SpellScript>();
-        if (((spellScript.isDirect && enemyTarget) || (spellScript.isZone))
+        if (spellScript.isDirect && enemyTarget
             && spellManager.GetSpellLevel(spellScript.displayName) > 0
             && spellManager.CanLaunchSpell(spellScript.displayName)) 
         {
             LaunchDirectSpell(spell);
         }
-        else if ((spellScript.isDirect && !enemyTarget) && spellManager.GetSpellLevel(spellScript.displayName) > 0
+        else if (spellScript.isDirect && !enemyTarget && spellManager.GetSpellLevel(spellScript.displayName) > 0
                                                         && spellManager.CanLaunchSpell(spellScript.displayName))
             LaunchCloseSpell(spell);
+        else if (spellScript.isZone && spellManager.GetSpellLevel(spellScript.displayName) > 0
+                 && spellManager.CanLaunchSpell(spellScript.displayName))
+            LaunchSelectZoneSpell(spell);
         else
             Debug.Log("Cannot launch " + spellScript.displayName);
     }
