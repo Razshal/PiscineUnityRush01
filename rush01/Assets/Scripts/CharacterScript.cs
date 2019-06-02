@@ -160,40 +160,24 @@ public class CharacterScript : MonoBehaviour
 
     protected void Update()
     {
-        if (name == "Player")
-        Debug.Log("Update Base");
         if (state != State.DEAD)
         {
             
             if (enemyTarget)
                 navMeshAgent.SetDestination(enemyTarget.transform.position);
-
             // Defines if target is reached
             isInContact = navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance;
-            if (name == "Player")
-            {
-                Debug.Log("enemyTarget  = " + (enemyTarget != null).ToString());
-                Debug.Log(isInContact.ToString() + " = " + navMeshAgent.remainingDistance.ToString() + "<=" + navMeshAgent.stoppingDistance);
-            }
             
             // Sets states for animations and attack
             if (!isInContact)
-            {
-                if (name == "Player")
-                Debug.Log("---1" + prioritaryWaypoint);
                 state = State.RUN;
-            }
             else if (!prioritaryWaypoint && enemyTarget && isInContact && enemyTarget.GetComponent<CharacterScript>().state != State.DEAD)
             {
-                if (name == "Player" + prioritaryWaypoint)
-                Debug.Log("---2");
                 transform.LookAt(enemyTarget.transform.position);
                 state = State.ATTACKING;
             }
             else
             {
-                if (name == "Player" + prioritaryWaypoint)
-                Debug.Log("---3");
                 state = State.IDLE;
                 prioritaryWaypoint = false;
                 if (isPlayer)

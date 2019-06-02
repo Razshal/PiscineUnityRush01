@@ -86,7 +86,6 @@ public class PlayerScript : CharacterScript
             && other.gameObject.GetComponent<CharacterScript>().state != State.DEAD
             && !prioritaryWaypoint)
         {
-            Debug.Log("OnTriggerStay Maya");
             enemyTarget = other.gameObject;
         }
     }
@@ -161,7 +160,6 @@ public class PlayerScript : CharacterScript
 
     new void Update()
     {
-        Debug.Log("Update Maya");
         base.Update();
 
 
@@ -174,7 +172,6 @@ public class PlayerScript : CharacterScript
                 && !statsUI.activeSelf)
             {
                 
-                Debug.Log("--------------------------------------------------------------------");
                 navMeshAgent.SetDestination(clickHit.point);
                 prioritaryWaypoint = true;
                 enemyTarget = null;
@@ -202,9 +199,14 @@ public class PlayerScript : CharacterScript
         }
         else
             deathText.SetActive(true);
-        if (Input.GetKeyDown(KeyCode.Alpha1)) {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
             LaunchSpell(SkillBar.Instance.getSpell(0));
-        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+            LaunchSpell(SkillBar.Instance.getSpell(1));
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+            LaunchSpell(SkillBar.Instance.getSpell(2));
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+            LaunchSpell(SkillBar.Instance.getSpell(3));
     }
 
     private void LaunchDirectSpell(GameObject spell)
@@ -215,11 +217,30 @@ public class PlayerScript : CharacterScript
         launchedSpell.Start();
     }
 
+    private void LaunchCloseSpell(GameObject spell)
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, navMeshAgent.stoppingDistance * 10.0f, LayerMask.GetMask("Enemy"));
+        if (hitColliders.Length > 0)
+        {
+            foreach (var collider in hitColliders)
+            {
+                SpellScript launchedSpell = Instantiate(spell, transform.position, transform.rotation).GetComponent<SpellScript>();
+                launchedSpell.target = collider.gameObject;
+                launchedSpell.spellLevel = spellManager.GetSpellLevel(spell.GetComponent<SpellScript>().displayName);
+                launchedSpell.Start();
+            }    
+        }
+    }
+
     public void LaunchSpell(GameObject spell)
     {
         SpellScript spellScript = spell.GetComponent<SpellScript>();
         if (((spellScript.isDirect && enemyTarget) || (spellScript.isZone)) && spellManager.GetSpellLevel(spellScript.displayName) > 0)
             LaunchDirectSpell(spell);
+        else if (spellScript.isDirect && !enemyTarget && spellManager.GetSpellLevel(spellScript.displayName) > 0)
+        {
+            LaunchCloseSpell(spell);   
+        }
         else
             Debug.Log("Cannot launch " + spellScript.displayName);
     }
