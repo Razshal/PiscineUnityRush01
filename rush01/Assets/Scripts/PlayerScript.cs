@@ -13,7 +13,7 @@ public class PlayerScript : CharacterScript
     private SpellManager spellManager;
 
     private RaycastHit clickHit;
-    private Camera camera;
+    private Camera cameraLUL;
     private int frameCount;
 
     // Player ui references
@@ -75,7 +75,7 @@ public class PlayerScript : CharacterScript
     new void Start()
     {
         base.Start();
-        camera = Camera.main;
+        cameraLUL = Camera.main;
         displayName = "Maya";
         experience = 0;
         spellManager = GameObject.Find("GameManager").GetComponent<SpellManager>();
@@ -165,7 +165,7 @@ public class PlayerScript : CharacterScript
         {
             // Sets player click movement instructions
             if (Input.GetMouseButtonDown(0)
-                && Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out clickHit)
+                && Physics.Raycast(cameraLUL.ScreenPointToRay(Input.mousePosition), out clickHit)
                 && !clickHit.collider.gameObject.CompareTag("Enemy")
                 && !statsUI.activeSelf)
             {
