@@ -10,7 +10,7 @@ public enum Type
 public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
 {
 
-	
+	Quaternion rotation;
 	public GameObject itemToEquip;
 	public Type type = Type.eAll;
 	public string info;
@@ -21,7 +21,16 @@ public class ItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 	private UiSlot _parentSlot;
 	private Vector3 _startPosition;
 	private Transform _startParent;
-	
+
+	private void Awake()
+	{
+		rotation = transform.rotation;
+	}
+	void LateUpdate()
+	{
+		transform.rotation = rotation;
+	}
+
 	public void OnBeginDrag(PointerEventData eventData)
 	{
 		Debug.Log(name + "OnBeginDrag");
