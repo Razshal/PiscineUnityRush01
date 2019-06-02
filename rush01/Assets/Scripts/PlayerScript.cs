@@ -203,16 +203,17 @@ public class PlayerScript : CharacterScript
     {
         SpellScript launchedSpell = Instantiate(spell, transform.position, transform.rotation).GetComponent<SpellScript>();
         launchedSpell.target = enemyTarget;
-        launchedSpell.spellLevel = spellManager.GetSpellLevel(launchedSpell.name);
+        launchedSpell.spellLevel = spellManager.GetSpellLevel(launchedSpell.displayName);
         launchedSpell.Start();
     }
 
     public void LaunchSpell(GameObject spell)
     {
-        if (spell.GetComponent<SpellScript>().isDirect && enemyTarget)
-        {
+        SpellScript spellScript = spell.GetComponent<SpellScript>();
+        if (spellScript.isDirect && enemyTarget && spellManager.GetSpellLevel(spellScript.displayName) > 0)
             LaunchDirectSpell(spell);
-        }
+        else
+            Debug.Log("Cannot launch " + spellScript.displayName);
     }
 
     //ANIMATION EVENT || TEST

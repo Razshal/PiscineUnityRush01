@@ -6,7 +6,7 @@ public class SpellManager : MonoBehaviour
 {
     public static SpellManager Instance { get; private set; }
     private Dictionary<string, GameObject> _spellDictionary = new Dictionary<string, GameObject>();
-    private Dictionary<string, int> _spellLevelDictionary = new Dictionary<string, int>();
+    public Dictionary<string, int> _spellLevelDictionary = new Dictionary<string, int>();
     [SerializeField] List<GameObject> spellValues = new List<GameObject>();
 
     private void Awake()
